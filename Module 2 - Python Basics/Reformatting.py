@@ -1,10 +1,14 @@
 #Re-formatting Sequences
-def String_into_fasta():
+def main():
     filename = input("Enter filename that you want to input: ")
-    workfile = open(filename, 'r')
+    return filename
+filename = main()
+
+
+def String_into_fasta(filename):
     seq = ("")
     species =  ("")
-
+    workfile = open(filename, 'r')
     for Line in workfile:
         Line = Line.split('\n',1)[0]
         Line = Line.split("//",1)[0]
@@ -21,12 +25,26 @@ def String_into_fasta():
     ListSpecies = species.split()
 
     return ListSeq, ListSpecies
-
-ListSeq, ListSpecies = String_into_fasta()
-
-def Reformat_Length(ListSeq, ListSpecies):
+ListSeq, ListSpecies = String_into_fasta(filename)
 
 
-    return
+def Reformat_Length(ListSeq):
+    New = ("")
+    FragList = []
+    for n in range(0, len(ListSeq)): #Looks at one DNA seq at the time
+        WordList= ListSeq[n]
+        if len(WordList) > 10: #Lookst if the number of words in the list is more than 10
+            SegWordList = list(map(' '.join, zip(*[iter(WordList)]*10))) #segments the list into words with spaces of 10
+            for i in range(0, len(SegWordList)):
+                New = New +'\n'+ SegWordList[i]
+        New = New.replace(" ","")
+        FragList.append(New)
+        New = ("")
+    return FragList
 
-Reformat_Length(ListSeq, ListSpecies)
+
+FragList = Reformat_Length(ListSeq)
+
+for n in range(0, len(ListSpecies),1):
+    print(ListSpecies[n])
+    print(FragList[n])
