@@ -1,1 +1,1 @@
-# appbio17
+# Modules for applied bioinformatics. 
