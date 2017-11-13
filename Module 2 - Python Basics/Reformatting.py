@@ -45,4 +45,3 @@ FragList = Reformat_Length(ListSeq)
 for n in range(0, len(ListSpecies),1):
     print(ListSpecies[n])
     print(FragList[n])
-    print("hej")
