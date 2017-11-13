@@ -16,10 +16,15 @@ def String_into_fasta(filename):
         words = Line.split()
 
         for i in range(0, len(words), 2):
-            seq = seq + '\n' + words[1]
+
+            if  len(words) ==2:
+                seq += '\n' + words[1]
+
+            else:
+                seq += '\n' + "empty"
 
         for i in range(0,len(words),2):
-            species = '>' +  words[0] + '\n'  + species
+            species += '>' +  words[0] + '\n'  #+ species
 
     ListSeq = seq.split()
     ListSpecies = species.split()
@@ -27,20 +32,25 @@ def String_into_fasta(filename):
     return ListSeq, ListSpecies
 ListSeq, ListSpecies = String_into_fasta(filename)
 
+
 def Reformat_Length(ListSeq):
     New = ("")
     FragList = []
     for n in range(0, len(ListSeq)): #Looks at one DNA seq at the time
         WordList= ListSeq[n]
-        if len(WordList) > 10: #Lookst if the number of words in the list is more than 10
-            SegWordList = list(map(' '.join, zip(*[iter(WordList)]*10))) #segments the list into words with spaces of 10
+        if len(WordList) > 60: #Lookst if the number of words in the list is more than 10
+            SegWordList = list(map(' '.join, zip(*[iter(WordList)]*60))) #segments the list into words with spaces of 10
             for i in range(0, len(SegWordList)):
                 New = New + SegWordList[i] +'\n'
+        else:
+            New = WordList
+
         New = New.replace(" ","")
         FragList.append(New)
         New = ("")
     return FragList
 FragList = Reformat_Length(ListSeq)
+
 
 for n in range(0, len(ListSpecies),1):
     print(ListSpecies[n])
