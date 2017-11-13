@@ -35,7 +35,7 @@ def Reformat_Length(ListSeq):
         if len(WordList) > 10: #Lookst if the number of words in the list is more than 10
             SegWordList = list(map(' '.join, zip(*[iter(WordList)]*10))) #segments the list into words with spaces of 10
             for i in range(0, len(SegWordList)):
-                New = New +'\n'+ SegWordList[i]
+                New = New + SegWordList[i] +'\n'
         New = New.replace(" ","")
         FragList.append(New)
         New = ("")
