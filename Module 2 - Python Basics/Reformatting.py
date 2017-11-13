@@ -27,7 +27,6 @@ def String_into_fasta(filename):
     return ListSeq, ListSpecies
 ListSeq, ListSpecies = String_into_fasta(filename)
 
-
 def Reformat_Length(ListSeq):
     New = ("")
     FragList = []
@@ -41,10 +40,9 @@ def Reformat_Length(ListSeq):
         FragList.append(New)
         New = ("")
     return FragList
-
-
 FragList = Reformat_Length(ListSeq)
 
 for n in range(0, len(ListSpecies),1):
     print(ListSpecies[n])
     print(FragList[n])
+    print("hej")
