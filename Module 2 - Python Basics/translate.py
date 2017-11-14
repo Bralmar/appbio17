@@ -34,7 +34,7 @@ def find_ORF(wholeseq):
 	orfs=[]
 	allorfs=[]
 	for n in range(0,3): 						#reading frames, should start reading from first, second and third nucleotide.
-		for i in range(1, len(wholeseq),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
+		for i in range(n, len(wholeseq),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
 			codon = wholeseq[i:i+3] 			#codon defined as nucleotide i to i+3
 			orf.append(codon)					#ads all codons into one orf
 			if codon == "TAA" or codon == "TGA" or codon == "TAG":	#if a codon is stop, the orf is saved as all codons until the stop.
@@ -55,7 +55,7 @@ longorf=find_longest_orf(orfs)
 print(longorf)
 
 
-def translate(longorf)
+def translate(longorf):
 	'''translates the longest ORF into a polypeptide'''
 	dic={
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
@@ -72,9 +72,20 @@ def translate(longorf)
     'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
     'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
     'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
-    'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_',
-    'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W',
-    }
+    'TAC':'Y', 'TAT':'Y', 'TGC':'C', 'TGT':'C', 
+	'TGG':'W'}
+	for i in range(0, len(longorf),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
+		codon = longorf[i:i+3] 			#codon defined as nucleotide i to i+3
+		codon_list = []
+		codon_list.append(codon)
+		for n in codon_list:
+			print(dic.key(n))			
+#if n == dic.key(n)
+	return codon_list
+translate(longorf)
+				
+			
+			
 	
 	
 
