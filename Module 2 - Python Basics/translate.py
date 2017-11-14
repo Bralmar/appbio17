@@ -31,8 +31,8 @@ def find_ORF(wholeseq):
 	orf=[]
 	orfs=[]
 	allorfs=[]
-	for n in range(0,2): 				#reading frames, should start reading from first, second and third nucleotide.
-		for i in range(n, len(wholeseq),3):	#reads from nucleotide no n to the last nucleotide, in jumps of three
+	for n in range(0,3):#reading frames, should start reading from first, second and third nucleotide.
+		for i in range(n, len(wholeseq), 3):	#reads from nucleotide no n to the last nucleotide, in jumps of three
 			codon = wholeseq[i:i+3] 	#codon defined as nucleotide i to i+3
 			orf.append(codon)			#ads all codons into one orf
 			if codon == "TAA" or codon == "TGA" or codon == "TAG":	#if a codon is stop, the orf is saved as all codons until the stop.
