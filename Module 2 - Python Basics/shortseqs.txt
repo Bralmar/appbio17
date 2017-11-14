@@ -1,0 +1,5 @@
+# STOCKHOLM 1.0
+only10chars	ACGTACGTAC
+emptysequence	
+onenucleotide	A---------
+//
