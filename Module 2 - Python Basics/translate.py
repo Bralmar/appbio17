@@ -71,6 +71,7 @@ def translate(longorf):
     'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
     'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
     'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
+<<<<<<< HEAD
     'TAC':'Y', 'TAT':'Y',  'TGC':'C', 'TGT':'C', 'TGG':'W',
 	}
 	for i in range(0, len(longorf),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
@@ -81,3 +82,25 @@ def translate(longorf):
 			print(dictionary.keys(n))
 	return
 translate(longorf)
+=======
+    'TAC':'Y', 'TAT':'Y', 'TGC':'C', 'TGT':'C', 
+	'TGG':'W'}
+	for i in range(0, len(longorf),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
+		codon = longorf[i:i+3] 			#codon defined as nucleotide i to i+3
+		codon_list = []
+		codon_list.append(codon)
+		for n in codon_list:
+			print(dic.key(n))			
+#if n == dic.key(n)
+	return codon_list
+translate(longorf)
+				
+			
+			
+	
+	
+
+
+
+
+>>>>>>> e58e8b43d18bf3c365bd86edceee45c35867e32e
