@@ -10,20 +10,18 @@ TAATAGTGATAATAGTGATAATAGTGA
 TAATAGTGATAATAGTGATAATAGTGA
 
 
->ambiguities  This is a comment, just here to remind you that Fasta sequences have description strings.
+>ambiguities This is a comment, just here to remind you that Fasta sequences have description strings.
 
 NNNNNNNNNNNNNNNNNNNNNNNNNNN
 NNNNNNNNNNNNNNNNNNNNNNNNNNN
 
 
->proteinalphabet This silly DNA string should translate to '
-ARNDCQEGHILKMFPSTWYV'
+>proteinalphabet This silly DNA string should translate to 'ARNDCQEGHILKMFPSTWYV'
 GCTCGTAATGATTGTCAAGAAGGTCATATT
 TTAAAAATGTTTCCTTCTACTTGGTATGTT
 
 
->proteinalphabet
-2
+>proteinalphabet2
 GCTC
 GTAA
 TGAT
@@ -49,11 +47,11 @@ ttaaaaatgtttccttctacttg
 gtatgtt
 
 
->tooshort  
-No open reading frame here!
+>tooshort No open reading frame here!
+
 A
 
 
->short   
-The longest reading frame is two codons, "NS" or "TV"
+>short The longest reading frame is two codons, "NS" or "TV"
+
 TAACAGTAG
