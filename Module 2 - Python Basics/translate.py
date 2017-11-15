@@ -21,23 +21,32 @@ def extract_sequence():
 		else:
 			sequence.append(line)
 	joined.append(''.join(sequence))
-	for unit in joined:				#replaces line-breakers with ''	
+	for unit in joined:				#replaces line-breakers with ''
 		joinedsequence.append(unit.replace('\n',''))
+<<<<<<< HEAD
 	joinedsequence=list(filter(None, joinedsequence))	#removes the first empty unit in the list joinedsequence
 	#print(joinedsequence)
 	return joinedsequence, name
+=======
+	joinedsequence=list(filter(None, joinedsequence))
+
+	return joinedsequence, name
+
+>>>>>>> 339c3532e0c7785441b5d0d470df944b880433a1
 wholeseq, name=extract_sequence()
-#print(sequence)
-#print(wholeseq)
-#print(name)
+
 
 def find_ORF(wholeseq):
 	'''reads each reading frame, searching for stop codons. If present, the sequence from the last stop codon until the next is saved as an ORF'''
 	orf=[]
 	orfs=[]
 	allorfs=[]
+<<<<<<< HEAD
 	longorf=[]
 	alllongorf=[]
+=======
+	alllongorf = []
+>>>>>>> 339c3532e0c7785441b5d0d470df944b880433a1
 	for k in wholeseq:
 		for n in range(0,3): 						#reading frames, should start reading from first, second and third nucleotide.
 			for i in range(n, len(k),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
@@ -48,15 +57,23 @@ def find_ORF(wholeseq):
 					allorfs.append(orfs)			#Adds the found string into a list
 					orf=[]							#Clear orf
 			longorf=max(allorfs, key=len)
+<<<<<<< HEAD
 			allorfs=[]
 		alllongorf.append(longorf)	
+=======
+			allorfs =[]
+		alllongorf.append(longorf)
+>>>>>>> 339c3532e0c7785441b5d0d470df944b880433a1
 	return alllongorf
 orfs=find_ORF(wholeseq)
 print(orfs)
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 339c3532e0c7785441b5d0d470df944b880433a1
 #def translate(longorf):
 #	'''translates the longest ORF into a polypeptide'''
 #	pept = ("")
