@@ -26,7 +26,7 @@ def extract_sequence():
 	#print(wholeseq)
 	return wholeseq, name
 wholeseq, name=extract_sequence()
-
+print(wholeseq)
 
 def find_ORF(wholeseq):
 	'''reads each reading frame, searching for stop codons. If present, the sequence from the last stop codon until the next is saved as an ORF'''
@@ -51,7 +51,7 @@ def find_longest_orf(orfs):
 	return longorf
 
 longorf=find_longest_orf(orfs)
-print(longorf)
+#print(longorf)
 
 
 def translate(longorf):
