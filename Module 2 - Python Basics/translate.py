@@ -14,6 +14,7 @@ def extract_sequence():
 	joined=[]
 	joinedsequence=[]
 	wholeseq=[]
+<<<<<<< HEAD
 	fullseq = []
 	NewList = []
 	for i in file:
@@ -28,6 +29,26 @@ def extract_sequence():
 	print(NewList)
 	return wholeseq, name
 wholeseq, name=extract_sequence()
+=======
+	finalseqs=[]
+	for line in file:					#If line starts with >, it is saved into 'name' list. If not, it is saved into 'sequence' list, as one line per element.
+		if line.startswith('>'):
+			name.append(line.split())
+			joined.append(''.join(sequence))
+			sequence=[]
+		else:
+			sequence.append(line)
+	joined.append(''.join(sequence))
+	for unit in joined:				#replaces line-breakers with ''	
+		joinedsequence.append(unit.replace('\n',''))
+	joinedsequence=list(filter(None, joinedsequence))
+	print(joinedsequence)
+	return wholeseq, name
+wholeseq, name=extract_sequence()
+#print(sequence)
+#print(wholeseq)
+#print(name)
+>>>>>>> c3b54f13599a015407cbf8acda3678469ee85427
 
 def find_ORF(wholeseq):
 	'''reads each reading frame, searching for stop codons. If present, the sequence from the last stop codon until the next is saved as an ORF'''
@@ -51,7 +72,11 @@ def find_ORF(wholeseq):
 #	longorf=max(orfs, key=len)
 #	return longorf
 
+<<<<<<< HEAD
 #longorf=find_longest_orf(orfs)
+=======
+longorf=find_longest_orf(orfs)
+>>>>>>> c3b54f13599a015407cbf8acda3678469ee85427
 #print(longorf)
 
 
