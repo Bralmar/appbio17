@@ -23,10 +23,12 @@ def extract_sequence():
 	for line in sequence:				#replaces line-breakers with ''
 		joinedsequence.append(line.replace('\n',''))
 	wholeseq=''.join(joinedsequence)	#joins each element into one
-	#print(wholeseq)
+	print(joinedsequence)
 	return wholeseq, name
 wholeseq, name=extract_sequence()
-
+#print(sequence)
+#print(wholeseq)
+print(name)
 
 def find_ORF(wholeseq):
 	'''reads each reading frame, searching for stop codons. If present, the sequence from the last stop codon until the next is saved as an ORF'''
@@ -54,30 +56,30 @@ longorf=find_longest_orf(orfs)
 print(longorf)
 
 
-def translate(longorf):
-	'''translates the longest ORF into a polypeptide'''
-	pept = ("")
-	dictionary={
-    'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
-    'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
-    'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
-    'AGC':'S', 'AGT':'S', 'AGA':'R', 'AGG':'R',
-    'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L',
-    'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P',
-    'CAC':'H', 'CAT':'H', 'CAA':'Q', 'CAG':'Q',
-    'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R',
-    'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V',
-    'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A',
-    'GAC':'D', 'GAT':'D', 'GAA':'E', 'GAG':'E',
-    'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
-    'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
-    'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
-    'TAC':'Y', 'TAT':'Y', 'TGC':'C', 'TGT':'C',
-	'TGG':'W', 'TAA':'_', 'TAG':'_', 'TGA':'_',
-	}
-	for i in range(0, len(longorf),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
-		codon = longorf[i:i+3] 			#codon defined as nucleotide i to i+3
-		pept += dictionary[codon]
-	print(pept)
-	return pept #codon_list
-translate(longorf)
+#def translate(longorf):
+#	'''translates the longest ORF into a polypeptide'''
+#	pept = ("")
+#	dictionary={
+#    'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
+#    'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
+#    'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
+#    'AGC':'S', 'AGT':'S', 'AGA':'R', 'AGG':'R',
+#    'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L',
+#    'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P',
+#    'CAC':'H', 'CAT':'H', 'CAA':'Q', 'CAG':'Q',
+#    'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R',
+#    'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V',
+#    'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A',
+#    'GAC':'D', 'GAT':'D', 'GAA':'E', 'GAG':'E',
+#    'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
+#    'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
+#    'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
+#    'TAC':'Y', 'TAT':'Y', 'TGC':'C', 'TGT':'C',
+#	'TGG':'W', 'TAA':'_', 'TAG':'_', 'TGA':'_',
+#	}
+#	for i in range(0, len(longorf),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
+#		codon = longorf[i:i+3] 			#codon defined as nucleotide i to i+3
+#		pept += dictionary[codon]
+#	print(pept)
+#	return pept #codon_list
+#translate(longorf)
