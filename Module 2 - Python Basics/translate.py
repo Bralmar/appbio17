@@ -13,8 +13,6 @@ def extract_sequence():
 	name=[]
 	joined=[]
 	joinedsequence=[]
-	wholeseq=[]
-	finalseqs=[]
 	for line in file:					#If line starts with >, it is saved into 'name' list. If not, it is saved into 'sequence' list, as one line per element.
 		if line.startswith('>'):
 			name.append(line.split())
@@ -25,9 +23,9 @@ def extract_sequence():
 	joined.append(''.join(sequence))
 	for unit in joined:				#replaces line-breakers with ''	
 		joinedsequence.append(unit.replace('\n',''))
-	joinedsequence=list(filter(None, joinedsequence))
-	print(joinedsequence)
-	return wholeseq, name
+	joinedsequence=list(filter(None, joinedsequence))	#removes the first empty unit in the list joinedsequence
+	#print(joinedsequence)
+	return joinedsequence, name
 wholeseq, name=extract_sequence()
 #print(sequence)
 #print(wholeseq)
@@ -38,25 +36,25 @@ def find_ORF(wholeseq):
 	orf=[]
 	orfs=[]
 	allorfs=[]
-	for n in range(0,3): 						#reading frames, should start reading from first, second and third nucleotide.
-		for i in range(n, len(wholeseq),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
-			codon = wholeseq[i:i+3] 			#codon defined as nucleotide i to i+3
-			orf.append(codon)					#ads all codons into one orf
-			if codon == "TAA" or codon == "TGA" or codon == "TAG":	#if a codon is stop, the orf is saved as all codons until the stop.
-				orfs=''.join(orf)				#Joins the comma spaced codons in the orf to one fluent string
-				allorfs.append(orfs)			#Adds the found string into a list
-				orf=[]							#Clear orf
-	return allorfs
+	longorf=[]
+	alllongorf=[]
+	for k in wholeseq:
+		for n in range(0,3): 						#reading frames, should start reading from first, second and third nucleotide.
+			for i in range(n, len(k),3):		#reads from nucleotide no n to the last nucleotide, in jumps of three
+				codon = k[i:i+3] 			#codon defined as nucleotide i to i+3
+				orf.append(codon)					#ads all codons into one orf
+				if codon == "TAA" or codon == "TGA" or codon == "TAG":	#if a codon is stop, the orf is saved as all codons until the stop.
+					orfs=''.join(orf)				#Joins the comma spaced codons in the orf to one fluent string
+					allorfs.append(orfs)			#Adds the found string into a list
+					orf=[]							#Clear orf
+			longorf=max(allorfs, key=len)
+			allorfs=[]
+		alllongorf.append(longorf)	
+	return alllongorf
 orfs=find_ORF(wholeseq)
+print(orfs)
 
 
-def find_longest_orf(orfs):
-	'''finds the longest orf in the collection'''
-	longorf=max(orfs, key=len)
-	return longorf
-
-longorf=find_longest_orf(orfs)
-#print(longorf)
 
 
 #def translate(longorf):
