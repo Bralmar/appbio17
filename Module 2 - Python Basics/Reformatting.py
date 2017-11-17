@@ -47,12 +47,12 @@ def Reformat_Length(ListSeq):
         if len(WordList) > 60: #Lookst if the number of words in the list is more than 60
             SegWordList = list(map(' '.join, zip(*[iter(WordList)]*60))) #segments the list into words with spaces of 60
             for i in range(0, len(SegWordList)): #Iriterate of all elements in the list and adds them into a string
-                NewList = NewList + SegWordList[i] +'\n'    #creates individual lines for each 60 line string
+                NewList +=  SegWordList[i] +'\n'    #creates individual lines for each 60 line string
         else:
             NewList = WordList  #If the line is less than 60 char it does not have to be split into a new line
 
-        NewList = New.replace(" ","")   #Removs the spaces which was introduced when the segments was made
-        FragmentList.append(New)        #Appends all to a list
+        NewList = NewList.replace(" ","")   #Removs the spaces which was introduced when the segments was made
+        FragmentList.append(NewList)        #Appends all to a list
         NewList = ("")
     return FragmentList
 FragmentList = Reformat_Length(ListSeq)

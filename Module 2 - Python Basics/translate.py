@@ -57,8 +57,11 @@ def find_ORF(wholeseq):
 
 					if codon == "TAA" or codon == "TGA" or codon == "TAG" or len(codon) !=3:	#if a codon is stop, the orf is saved as all codons until the stop.#Joins the comma spaced codons in the orf to one fluent string
 						allorfs.append(''.join(orf))			#Adds the found string into a list						#Clear orf
-						codon=[]
 						orf =[]
+					elif n==len(k):
+						allorfs.append(''.join(orf))			#Adds the found string into a list						#Clear orf
+						orf =[]
+
 			orf =[]
 			longorf=max(allorfs, key=len)
 			allorfs =[]
