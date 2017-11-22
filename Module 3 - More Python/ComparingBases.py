@@ -15,7 +15,10 @@ def extract_sequence(x):
 				name += fullname[0:10]
 		else:
 			sequence+=line
-	
+	#print(sequence)
+	#if 'c' or 't' or 'a' or 'g' in sequence:
+	#	sys.stderr.write('Error')
+	#	sys.exit()
 	return sequence, name
 
 
@@ -57,12 +60,10 @@ def distance(cocklist):
 				diffList.append(diff)
 				diff = []
 			SqrtVal=(math.sqrt(sum(diffList)*0.25))
+			SqrtVal=round(SqrtVal, 4)
 			SqrtList.append(SqrtVal)
 			diffList = []
 			SqrtVal = []
-		#totSqrtList.append(SqrtList)
-	print(SqrtList)
-
 	return SqrtList
 
 
@@ -81,11 +82,11 @@ def main():
 	
 	totSqrtList = distance(cocklist)
 		
-	
-	for n in range(0,len(sys.argv[1:])):
-		for i in range(0, len(totSqrtList)):
-			print(totname[n], totSqrtList[i:i+4])
-
+	x=0
+	print(len(sys.argv[1:]))
+	for n in range(0, len(sys.argv[1:])):
+		print(totname[n], totSqrtList[x:x+len(sys.argv[1:])])
+		x+=len(sys.argv[1:])	
 	return cocklist 
 
 main()
