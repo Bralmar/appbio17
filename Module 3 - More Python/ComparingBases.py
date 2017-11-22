@@ -61,7 +61,7 @@ def distance(cocklist):
 				diff = []
 			SqrtVal=(math.sqrt(sum(diffList)*0.25))
 			SqrtVal=round(SqrtVal, 4)
-			SqrtList.append(SqrtVal)
+			SqrtList.append(str(SqrtVal))
 			diffList = []
 			SqrtVal = []
 	return SqrtList
@@ -81,12 +81,19 @@ def main():
 		totname.append(name)
 	
 	totSqrtList = distance(cocklist)
+	
+	totSqrtList=' '.join(totSqrtList)
+	totname=' '.join(totname)
+	print(totSqrtList)
+	print(totname)
+
+	#print(totSqrtList)
 		
-	x=0
-	print(len(sys.argv[1:]))
-	for n in range(0, len(sys.argv[1:])):
-		print(totname[n], totSqrtList[x:x+len(sys.argv[1:])])
-		x+=len(sys.argv[1:])	
+#	x=0
+#	print(len(sys.argv[1:]))
+#	for n in range(0, len(sys.argv[1:])):
+#		print(totname[n], totSqrtList[x:x+len(sys.argv[1:])])
+#		x+=len(sys.argv[1:])	
 	return cocklist 
 
 main()
