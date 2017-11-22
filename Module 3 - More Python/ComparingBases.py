@@ -1,4 +1,5 @@
 #! /usr/bin/env python2
+# How to run: ./ComparingBases.py simple1.fasta simple2.fasta
 import sys
 import math
 
@@ -8,17 +9,20 @@ def extract_sequence(x):
 	name=""
 	for line in x:
 		if line.startswith('>'):
-			name=line.replace('\n','')
+			fullname=line.replace('\n','')
 			
+			if len(fullname)>10:
+				name += fullname[0:10]
 		else:
 			sequence+=line
-			
+	
 	return sequence, name
 
 
 
 
 def compvec(sequence):
+	''' Counts the number of bases in each string'''
 	
 	gcount=sequence.count('G')
 	ccount=sequence.count('C')
@@ -39,36 +43,56 @@ def compvec(sequence):
 	
 
 
-
-def main():
-	cocklist = []
-	for file in sys.argv[1:]:
-		x = open(file, 'r')
-		sequence, name=extract_sequence(x)
-		templist = compvec(sequence)
-		cocklist += templist
-
-	return cocklist 
-
-cocklist = main()
-
-
-
-
 def distance(cocklist): 
 	diff = []
 	diffList = []
-	sqrtList = []
+	SqrtList = []
+	totSqrtList=[]
 	sqrt = []
-	for n in range(0,4):
-		diff = math.pow((cocklist[n]-cocklist[n+4]),2)
-		diffList.append(diff)
-		diff = []
-	RovList = math.sqrt(sum(diffList)*0.25)
-	print(RovList)
-	return diffList
+	totSqrtList2 = []
+	for i in cocklist:
+		for n in cocklist:
+			for m in range(0,4):
+				diff = math.pow((i[m]-n[m]),2)
+				diffList.append(diff)
+				diff = []
+			SqrtVal=(math.sqrt(sum(diffList)*0.25))
+			SqrtList.append(SqrtVal)
+			diffList = []
+			SqrtVal = []
+		#totSqrtList.append(SqrtList)
+	print(SqrtList)
 
-diffList = distance(cocklist)
+	return SqrtList
+
+
+
+
+def main():
+	cocklist = []
+	totname = []
+	for file in sys.argv[1:]:
+		x = open(file, 'r')
+		sequence, name=extract_sequence(x)
+
+		totList = compvec(sequence)
+		cocklist.append(totList)
+		totname.append(name)
+	
+	totSqrtList = distance(cocklist)
+		
+	
+	for n in range(0,len(sys.argv[1:])):
+		for i in range(0, len(totSqrtList)):
+			print(totname[n], totSqrtList[i:i+4])
+
+	return cocklist 
+
+main()
+
+
+
+
 
 
 
