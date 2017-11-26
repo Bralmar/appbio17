@@ -2,6 +2,7 @@
 ''' Takes Stockholm files as input and reformats them into fasta format files, with each line at
 most 60 character long.
 '''
+import pdb
 #Main function that is used to call and ask for the input file
 def main():
     filename = input("Enter filename that you want to input: ")
@@ -33,7 +34,7 @@ def String_into_fasta(filename):
 
     ListSeq = seq.split()   #Splits the strings into lists, used later for easier control
     ListSpecies = species.split()
-
+    pdb.set_trace()
     return ListSeq, ListSpecies
 ListSeq, ListSpecies = String_into_fasta(filename)
 
