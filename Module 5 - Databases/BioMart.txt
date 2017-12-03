@@ -1,0 +1,94 @@
+Trying Ensembl BioMart
+1.Try the "count" button. Ensembl should respond by claiming it has 63,967 genes for human (as of 2017-11-24). 
+You get this many genes because Ensembl has included RNA genes and pseudogenes. 
+- Get 63967
+
+2. How many unique protein-coding genes are there then? Use filters to list those genes that have the type "protein coding".
+-22375 protein coding genes. (Gene ->Gene type)
+
+3. How many of the protein coding genes have been assigned an ID by the Human Gene Nomenclature Committee (HGNC)? (There should be fewer than in the previous question.)
+-21579 protein coding genes with the HGNC ID (Gene -> Limit to genes(external references)
+
+4. How many genes have an orthologue in mouse? Use the homologue filter. 
+-17733 Genes, with the previous filters still on.  (Multi Species Comparison -> Homologue Filter)
+-19949 Genes, with the previous filters off. 
+
+Retriving Results
+1. TSV, HTML, XLS, CSV
+
+2. URL: Gives you the url to the webpage, with your exact filters and options still on. 
+
+XML: Gives a XML file of your gene database, with you current filters. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Query>
+<Query  virtualSchemaName = "default" formatter = "TSV" header = "0" uniqueRows = "0" count = "" datasetConfigVersion = "0.6" >
+			
+	<Dataset name = "hsapiens_gene_ensembl" interface = "default" >
+		<Filter name = "with_mmusculus_homolog" excluded = "0"/>
+		<Attribute name = "ensembl_gene_id" />
+		<Attribute name = "ensembl_transcript_id" />
+	</Dataset>
+</Query
+
+
+Pearl: Gives code in pearl. For using your database. 
+
+
+# An example script demonstrating the use of BioMart API.
+# This perl API representation is only available for configuration versions >=  0.5 
+use strict;
+use BioMart::Initializer;
+use BioMart::Query;
+use BioMart::QueryRunner;
+
+my $confFile = "PATH TO YOUR REGISTRY FILE UNDER biomart-perl/conf/. For Biomart Central Registry navigate to
+						http://www.biomart.org/biomart/martservice?type=registry";
+#
+# NB: change action to 'clean' if you wish to start a fresh configuration  
+# and to 'cached' if you want to skip configuration step on subsequent runs from the same registry
+#
+
+my $action='cached';
+my $initializer = BioMart::Initializer->new('registryFile'=>$confFile, 'action'=>$action);
+my $registry = $initializer->getRegistry;
+
+my $query = BioMart::Query->new('registry'=>$registry,'virtualSchemaName'=>'default');
+
+		
+	$query->setDataset("hsapiens_gene_ensembl"); 
+	$query->addFilter("with_mmusculus_homolog", ["Only"]);
+	$query->addAttribute("ensembl_gene_id");
+	$query->addAttribute("ensembl_transcript_id");
+
+$query->formatter("TSV");
+
+my $query_runner = BioMart::QueryRunner->new();
+############################## GET COUNT ############################
+# $query->count(1);
+# $query_runner->execute($query);
+# print $query_runner->getCount();
+#####################################################################
+
+
+############################## GET RESULTS ##########################
+# to obtain unique rows only
+# $query_runner->uniqueRowsOnly(1);
+
+$query_runner->execute($query);
+$query_runner->printHeader();
+$query_runner->printResults();
+$query_runner->printFooter();
+#####################################################################
+
+Downloading Sequences. (Protein Domains and Families -> Limit to genes with these....) (Gene ->Gene type) Gives 53 genes. (Attributes -> Sequences)
+1. Fasta.
+
+2. Unspliced transcript: mRNA not spliced. You get all isoforms. 
+Unspliced Gene: Gene not spliced, and you do not get all different isoforms.
+
+3. unspliced transcript: Unspliced mRNA
+cDNA: mRNA that has been reverse transcribed into DNA. get isoforms. 
+
+4. 230 sequences. Different isoforms. (ctrl + f ">")
+
