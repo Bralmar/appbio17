@@ -1,0 +1,110 @@
+Bra guide: https://www.youtube.com/watch?v=QjICgmk31js 
+eller: https://sqlite.org/cli.html
+
+Database Schema (.read protdb.sqlite3 -> .schema)
+
+1. Figure out what the schema of the loaded database is!
+There are 4 different tables in this database: "protein", "species", "family", and "family members". 
+
+CREATE TABLE protein (
+    accession character varying(20) PRIMARY KEY,
+    species character(2),
+    "sequence" character varying(5000)
+);
+CREATE TABLE species (
+    abbrev character(2) PRIMARY KEY,
+    name character varying(50),
+    common character varying(20)
+);
+CREATE TABLE family (
+    acc character varying(10) PRIMARY KEY,
+    descr character varying(100)
+);
+CREATE TABLE familymembers (
+    family character varying(10),
+    protein character varying(20),
+    PRIMARY KEY(family, protein)
+);
+
+
+
+Querying the database
+1. What species are in the database? (select * from species)
+Hs|Homo sapiens|Human
+Mm|Mus musculus|Mouse
+Gg|Gallus gallus|Chicken
+Xl|Xenopus laevis|African clawed frog
+Bt|Bos taurus|Cow
+Tr|Takifugu rubripes|Pufferfish
+Br|Brachydanio rerio|Zebrafish
+Dm|Drosophila melanogaster|Fly
+Ce|Caenorhabditis elegans|Nematode
+
+
+2. insert into species(abbrev, name, common) values('Ss','Sus scrofa', 'Wild Boar');
+
+
+3. 	select accession,species,length(sequence) from protein
+ 	ORDER BY length(sequence); (OBS att den inte kör förrens man lägger till ";")
+
+FTF1_DROME|Dm|1027
+HR38_DROME|Dm|1073
+E75A_DROME|Dm|1237
+E75B_DROME|Dm|1394
+E75C_DROME|Dm|1443
+
+
+4. (select * from familymembers;) Oklart om detta är tillräckligt, står i frågan att dom vill ha hela species name, men vet inte hur det ska gå till.
+NHR3|ANDR_HUMAN
+NHR3|ANDR_MOUSE
+NHR3|ERR1_HUMAN
+NHR3|ERR1_MOUSE
+NHR3|ERR2_HUMAN
+NHR3|ERR2_MOUSE
+NHR3|ERR3_HUMAN
+NHR3|ESR1_BRARE
+NHR3|ESR1_CHICK
+NHR3|ESR1_HUMAN
+NHR3|ESR1_MOUSE
+NHR3|ESR1_XENLA
+NHR3|ESR2_BOVIN
+NHR3|ESR2_CHICK
+NHR3|ESR2_HUMAN
+NHR3|ESR2_MOUSE
+NHR3|GCR_HUMAN
+NHR3|GCR_MOUSE
+NHR3|GCR_XENLA
+NHR3|MCR_HUMAN
+NHR3|MCR_MOUSE
+NHR3|PRGR_CHICK
+NHR3|PRGR_HUMAN
+NHR3|PRGR_MOUSE
+
+
+5. select species, count(species) from protein group by species;
+Br|6
+Bt|6
+Ce|50
+Dm|16
+Gg|11
+Hs|47
+Mm|42
+Tr|1
+Xl|16
+
+
+6. Lite osäker på den här. Kanske måset lägga till lite mer, men får fråga.
+
+ALTER TABLE protein ADD COLUMN Protein_Structure text;
+insert into protein(Protein_Structure) values('2xkg');
+
+ALTER TABLE protein ADD COLUMN resolution text;
+insert into protein(resolution) values('1.6Å'); 
+
+ALTER TABLE protein ADD COLUMN method text; 
+insert into protein(method) values('Solution NMR');
+
+
+
+
+
