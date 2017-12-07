@@ -1,0 +1,224 @@
+1. show databases like 'felis_catus%'; 
+There are 115 databases for felis catus
+
+2.    
+mysql -u anonymous -h ensembldb.ensembl.org -P 3306 homo_sapiens_core_90_38
+SELECT DATABASES();
+
+SHOW TABLES like 'gene%';
+gene
+gene_archive
+gene_attrib
+
+DESCRIBE gene;
++-------------------------+----------------------+------+-----+---------+----------------+
+| Field                   | Type                 | Null | Key | Default | Extra          |
++-------------------------+----------------------+------+-----+---------+----------------+
+| gene_id                 | int(10) unsigned     | NO   | PRI | NULL    | auto_increment |
+| biotype                 | varchar(40)          | NO   |     | NULL    |                |
+| analysis_id             | smallint(5) unsigned | NO   | MUL | NULL    |                |
+| seq_region_id           | int(10) unsigned     | NO   | MUL | NULL    |                |
+| seq_region_start        | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_end          | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_strand       | tinyint(2)           | NO   |     | NULL    |                |
+| display_xref_id         | int(10) unsigned     | YES  | MUL | NULL    |                |
+| source                  | varchar(40)          | NO   |     | NULL    |                |
+| description             | text                 | YES  |     | NULL    |                |
+| is_current              | tinyint(1)           | NO   |     | 1       |                |
+| canonical_transcript_id | int(10) unsigned     | NO   | MUL | NULL    |                |
+| stable_id               | varchar(128)         | YES  | MUL | NULL    |                |
+| version                 | smallint(5) unsigned | YES  |     | NULL    |                |
+| created_date            | datetime             | YES  |     | NULL    |                |
+| modified_date           | datetime             | YES  |     | NULL    |                |
++-------------------------+----------------------+------+-----+---------+----------------+
+
+
+SHOW TABLES like 'transcript%';
+transcript                                      
+transcript_attrib                              
+transcript_intron_supporting_evidence          
+transcript_supporting_feature 
+
+
+DESCRIBE transcript;
++--------------------------+----------------------+------+-----+---------+----------------+
+| Field                    | Type                 | Null | Key | Default | Extra          |
++--------------------------+----------------------+------+-----+---------+----------------+
+| transcript_id            | int(10) unsigned     | NO   | PRI | NULL    | auto_increment |
+| gene_id                  | int(10) unsigned     | YES  | MUL | NULL    |                |
+| analysis_id              | smallint(5) unsigned | NO   | MUL | NULL    |                |
+| seq_region_id            | int(10) unsigned     | NO   | MUL | NULL    |                |
+| seq_region_start         | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_end           | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_strand        | tinyint(2)           | NO   |     | NULL    |                |
+| display_xref_id          | int(10) unsigned     | YES  | MUL | NULL    |                |
+| source                   | varchar(40)          | NO   |     | ensembl |                |
+| biotype                  | varchar(40)          | NO   |     | NULL    |                |
+| description              | text                 | YES  |     | NULL    |                |
+| is_current               | tinyint(1)           | NO   |     | 1       |                |
+| canonical_translation_id | int(10) unsigned     | YES  | UNI | NULL    |                |
+| stable_id                | varchar(128)         | YES  | MUL | NULL    |                |
+| version                  | smallint(5) unsigned | YES  |     | NULL    |                |
+| created_date             | datetime             | YES  |     | NULL    |                |
+| modified_date            | datetime             | YES  |     | NULL    |                |
++--------------------------+----------------------+------+-----+---------+----------------+
+
+
+SHOW TABLES like 'exon%';
+exon
+exon_transcript
+
+DESCRIBE exon;
++-------------------+----------------------+------+-----+---------+----------------+
+| Field             | Type                 | Null | Key | Default | Extra          |
++-------------------+----------------------+------+-----+---------+----------------+
+| exon_id           | int(10) unsigned     | NO   | PRI | NULL    | auto_increment |
+| seq_region_id     | int(10) unsigned     | NO   | MUL | NULL    |                |
+| seq_region_start  | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_end    | int(10) unsigned     | NO   |     | NULL    |                |
+| seq_region_strand | tinyint(2)           | NO   |     | NULL    |                |
+| phase             | tinyint(2)           | NO   |     | NULL    |                |
+| end_phase         | tinyint(2)           | NO   |     | NULL    |                |
+| is_current        | tinyint(1)           | NO   |     | 1       |                |
+| is_constitutive   | tinyint(1)           | NO   |     | 0       |                |
+| stable_id         | varchar(128)         | YES  | MUL | NULL    |                |
+| version           | smallint(5) unsigned | YES  |     | NULprocessed_pseudogene L    |                |
+| created_date      | datetime             | YES  |     | NULL    |                |
+| modified_date     | datetime             | YES  |     | NULL    |                |
++-------------------+----------------------+------+-----+---------+----------------+
+
+
+3. 
+mysql> select biotype
+    -> from gene
+    -> group by biotype;
++------------------------------------+
+| biotype                            |
++------------------------------------+
+| 3prime_overlapping_ncRNA           |
+| antisense_RNA                      |
+| bidirectional_promoter_lncRNA      |
+| IG_C_gene                          |
+| IG_C_pseudogene                    |
+| IG_D_gene                          |
+| IG_J_gene                          |
+| IG_J_pseudogene                    |
+| IG_pseudogene                      |
+| IG_V_gene                          |
+| IG_V_pseudogene                    |
+| lincRNA                            |
+| LRG_gene                           |
+| macro_lncRNA                       |
+| miRNA                              |
+| misc_RNA                           |
+| Mt_rRNA                            |
+| Mt_tRNA                            |
+| non_coding                         |
+| polymorphic_pseudogene             |
+| processed_pseudogene               |
+| processed_transcript               |
+| protein_coding                     |
+| pseudogene                         |
+| ribozyme                           |
+| rRNA                               |
+| scaRNA                             |
+| scRNA                              |
+| sense_intronic                     |
+| sense_overlapping                  |
+| snoRNA                             |
+| snRNA                              |
+| sRNA                               |
+| TEC                                |
+| transcribed_processed_pseudogene   |
+| transcribed_unitary_pseudogene     |
+| transcribed_unprocessed_pseudogene |
+| translated_processed_pseudogene    |
+| TR_C_gene                          |
+| TR_D_gene                          |
+| TR_J_gene                          |
+| TR_J_pseudogene                    |
+| TR_V_gene                          |
+| TR_V_pseudogene                    |
+| unitary_pseudogene                 |
+| unprocessed_pseudogene             |
+| vaultRNA                           |
++------------------------------------+
+
+3. select gene_id from gene where biotype = 'protein_coding';
+22375 rows in set (0.17 sec)
+
+4.
+select gene_id from gene where biotype='processed_pseudogene' and description!='NULL';
+
+5283 rows in set (0.06 sec)
+
+5. 
+mysql> select gene_id from gene where stable_id = 'ENSG00000012048' or stable_id ='ENSG00000139618'      -> ;
++---------+
+| gene_id |
++---------+
+|  177770 |
+|  131115 |
++---------+
+
+mysql> select transcript_id from transcript where gene_id ='177770' or gene_id ='131115';            +---------------+
+| transcript_id |
++---------------+
+|        448068 |
+|        448110 |
+|        448120 |
+|        448125 |
+|        448129 |
+|        448132 |
+|        448137 |
+|        630666 |
+|        630669 |
+|        630713 |
+|        630735 |
+|        630758 |
+|        630764 |
+|        630830 |
+|        630840 |
+|        630881 |
+|        630887 |
+|        630910 |
+|        630912 |
+|        630915 |
+|        630920 |
+|        630921 |
+|        630924 |
+|        630925 |
+|        630927 |
+|        630929 |
+|        630931 |
+|        630935 |
+|        630940 |
+|        630948 |
+|        630951 |
+|        630955 |
+|        630960 |
+|        630964 |
+|        630972 |
+|        630977 |
+|        630982 |
++---------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
