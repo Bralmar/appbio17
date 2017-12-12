@@ -45,7 +45,7 @@ Ce|Caenorhabditis elegans|Nematode
 
 
 3. 	select accession,species,length(sequence) from protein
- 	ORDER BY length(sequence); (OBS att den inte kör förrens man lägger till ";")
+ 	ORDER BY length(sequence); (OBS att den inte kÃ¶r fÃ¶rrens man lÃ¤gger till ";")
 
 FTF1_DROME|Dm|1027
 HR38_DROME|Dm|1073
@@ -54,7 +54,8 @@ E75B_DROME|Dm|1394
 E75C_DROME|Dm|1443
 
 
-4. (select * from familymembers;) Oklart om detta är tillräckligt, står i frågan att dom vill ha hela species name, men vet inte hur det ska gå till.
+4. select * from familymembers where family = 'NHR3';
+
 NHR3|ANDR_HUMAN
 NHR3|ANDR_MOUSE
 NHR3|ERR1_HUMAN
@@ -93,13 +94,13 @@ Tr|1
 Xl|16
 
 
-6. Lite osäker på den här. Kanske måset lägga till lite mer, men får fråga.
+6. Lite osÃ¤ker pÃ¥ den hÃ¤r. Kanske mÃ¥set lÃ¤gga till lite mer, men fÃ¥r frÃ¥ga.
 
 ALTER TABLE protein ADD COLUMN Protein_Structure text;
 insert into protein(Protein_Structure) values('2xkg');
 
 ALTER TABLE protein ADD COLUMN resolution text;
-insert into protein(resolution) values('1.6Å'); 
+insert into protein(resolution) values('1.6Ã…'); 
 
 ALTER TABLE protein ADD COLUMN method text; 
 insert into protein(method) values('Solution NMR');
