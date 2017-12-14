@@ -3,7 +3,7 @@ import sqlite3
 import sys
 
 def Call_SQL():
-	conn = sqlite3.connect('data.sqlite3')
+	conn = sqlite3.connect('database.sqlite3')
 	c = conn.cursor()
 
 	#### UPPGIFT 1 #########
@@ -11,11 +11,11 @@ def Call_SQL():
 	for row in c.execute("select * from species;"):
 		print(row)
 
-	#### UPPGIFT 2 #########
-	print('\n', "2. Add another species to the database: Sus scrofa!")
-	c.execute("insert into species(abbrev, name, common) values('Ss','Sus scrofa', 'Wild Boar');")
-	for row in c.execute("select * from species;"):
-		print(row)
+#	#### UPPGIFT 2 #########
+#	print('\n', "2. Add another species to the database: Sus scrofa!")
+#	c.execute("insert into species(abbrev, name, common) values('Ss','Sus scrofa', 'Wild Boar');")
+#	for row in c.execute("select * from species;"):
+#		print(row)
 
 	#### UPPGIFT 3 #########
 	print('\n', "3. What proteins are longer than 1000 aa?")
@@ -34,10 +34,13 @@ def Call_SQL():
 
 	#### UPPGIFT 6 #########
 	print('\n', "6. How do you change the schema to add information about a protein's structure?")
-	c.execute('''CREATE TABLE Protein_info
-			(id integer PRIMARY KEY, Protein_Structure varchar(10), Method varchar(10), Resolution integer(4))''')
-
-
+#	c.execute('''CREATE TABLE Protein_info
+#			(id integer PRIMARY KEY, Protein_Structure varchar(10), Method varchar(10), Resolution integer(4))''')
+	c.execute("insert into Protein_info(Protein_Structure, Method, Resolution) values('2xkg', 'Solution NMR', '1.6Å');")
+	c.execute("insert into Protein_info(Protein_Structure, Method, Resolution) values('5fvl', 'X-ray', '1.97Å');")
+	c.execute("insert into Protein_info(Protein_Structure, Method, Resolution) values('6eny', 'Crystal Meth', '2.6Å');")
+	for row in c.execute("select * from Protein_info;"):
+		print(row)
 	conn.close()
 	
 	return
