@@ -1,0 +1,1443 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.7.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_172731</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>146</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_172731</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>146</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|30584497|gb|AAP36501.1|</Hit_id>
+  <Hit_def>Homo sapiens cystatin C (amyloid angiopathy and cerebral hemorrhage), partial [synthetic construct] &gt;gi|61370467|gb|AAX43500.1| cystatin C, partial [synthetic construct] &gt;gi|61370475|gb|AAX43501.1| cystatin C, partial [synthetic construct]</Hit_def>
+  <Hit_accession>AAP36501</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.827</Hsp_bit-score>
+      <Hsp_score>769</Hsp_score>
+      <Hsp_evalue>2.06034e-103</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|4503107|ref|NP_000090.1|</Hit_id>
+  <Hit_def>cystatin-C precursor [Homo sapiens] &gt;gi|568599832|ref|NP_001275543.1| cystatin-C precursor [Homo sapiens] &gt;gi|1034136378|ref|XP_016793041.1| PREDICTED: cystatin-C [Pan troglodytes] &gt;gi|118183|sp|P01034.1|CYTC_HUMAN RecName: Full=Cystatin-C; AltName: Full=Cystatin-3; AltName: Full=Gamma-trace; AltName: Full=Neuroendocrine basic polypeptide; AltName: Full=Post-gamma-globulin; Flags: Precursor &gt;gi|296643|emb|CAA36497.1| cystatin C [Homo sapiens] &gt;gi|755738|emb|CAA29096.1| cystatin C [Homo sapiens] &gt;gi|4490944|emb|CAA43856.2| cystatin C [Homo sapiens] &gt;gi|15341822|gb|AAH13083.1| Cystatin C [Homo sapiens] &gt;gi|30582517|gb|AAP35485.1| cystatin C (amyloid angiopathy and cerebral hemorrhage) [Homo sapiens] &gt;gi|49456929|emb|CAG46785.1| CST3 [Homo sapiens] &gt;gi|49456989|emb|CAG46815.1| CST3, partial [Homo sapiens] &gt;gi|60820979|gb|AAX36556.1| cystatin C [synthetic construct] &gt;gi|61360748|gb|AAX41918.1| cystatin C [synthetic construct] &gt;gi|61360752|gb|AAX41919.1| cystatin C [synthetic construct] &gt;gi|82571743|gb|AAI10306.1| Cystatin C [Homo sapiens] &gt;gi|119630542|gb|EAX10137.1| cystatin C (amyloid angiopathy and cerebral hemorrhage), isoform CRA_a [Homo sapiens] &gt;gi|119630543|gb|EAX10138.1| cystatin C (amyloid angiopathy and cerebral hemorrhage), isoform CRA_a [Homo sapiens] &gt;gi|123981072|gb|ABM82365.1| cystatin C (amyloid angiopathy and cerebral hemorrhage) [synthetic construct] &gt;gi|157928178|gb|ABW03385.1| cystatin C (amyloid angiopathy and cerebral hemorrhage), partial [synthetic construct] &gt;gi|189053333|dbj|BAG35146.1| unnamed protein product [Homo sapiens] &gt;gi|258676383|gb|ACV87188.1| epididymis secretory protein Li 2 [Homo sapiens] &gt;gi|307684684|dbj|BAJ20382.1| cystatin C, partial [synthetic construct]</Hit_def>
+  <Hit_accession>NP_000090</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.827</Hsp_bit-score>
+      <Hsp_score>769</Hsp_score>
+      <Hsp_evalue>2.14972e-103</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|60831800|gb|AAX36984.1|</Hit_id>
+  <Hit_def>cystatin C, partial [synthetic construct]</Hit_def>
+  <Hit_accession>AAX36984</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.827</Hsp_bit-score>
+      <Hsp_score>769</Hsp_score>
+      <Hsp_evalue>2.32474e-103</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|181387|gb|AAA52164.1|</Hit_id>
+  <Hit_def>cystatin C [Homo sapiens]</Hit_def>
+  <Hit_accession>AAA52164</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>299.286</Hsp_bit-score>
+      <Hsp_score>765</Hsp_score>
+      <Hsp_evalue>8.57076e-103</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPATGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPA GSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|675792279|ref|XP_008953003.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Pan paniscus]</Hit_def>
+  <Hit_accession>XP_008953003</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>280.026</Hsp_bit-score>
+      <Hsp_score>715</Hsp_score>
+      <Hsp_evalue>1.08438e-92</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>178</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>LLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>LLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPHLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>LLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQP+ DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1059092806|ref|XP_017703337.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Rhinopithecus bieti] &gt;gi|1059092808|ref|XP_017703338.1| PREDICTED: cystatin-C [Rhinopithecus bieti]</Hit_def>
+  <Hit_accession>XP_017703337</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.766</Hsp_bit-score>
+      <Hsp_score>665</Hsp_score>
+      <Hsp_evalue>1.52721e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVNPAAGASPGKPPRLVGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYTVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAV+PAAG+SPGKPPRLVGGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIY VPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|332263709|ref|XP_003280894.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Nomascus leucogenys] &gt;gi|332263711|ref|XP_003280895.1| PREDICTED: cystatin-C [Nomascus leucogenys]</Hit_def>
+  <Hit_accession>XP_003280894</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.766</Hsp_bit-score>
+      <Hsp_score>665</Hsp_score>
+      <Hsp_evalue>1.78076e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGASPGKPPRLVGGPMDASVEEEGVRRALDFAVSEYNRASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPLHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAG+SPGKPPRLVGGPMDASVEEEGVRRALDFAV EYN+ASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCP HDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|74136407|ref|NP_001028096.1|</Hit_id>
+  <Hit_def>cystatin-C precursor [Macaca mulatta] &gt;gi|402883406|ref|XP_003905209.1| cystatin-C [Papio anubis] &gt;gi|544463823|ref|XP_005568224.1| PREDICTED: cystatin-C [Macaca fascicularis] &gt;gi|635022302|ref|XP_007960099.1| PREDICTED: cystatin-C [Chlorocebus sabaeus] &gt;gi|795364205|ref|XP_011748102.1| PREDICTED: cystatin-C [Macaca nemestrina] &gt;gi|795556486|ref|XP_011907261.1| PREDICTED: cystatin-C [Cercocebus atys] &gt;gi|966967793|ref|XP_015005078.1| PREDICTED: cystatin-C isoform X1 [Macaca mulatta] &gt;gi|3023630|sp|O19092.1|CYTC_MACMU RecName: Full=Cystatin-C; AltName: Full=Cystatin-3; Flags: Precursor &gt;gi|1881827|gb|AAB49517.1| cystatin C [Macaca mulatta=rhesus monkeys, brain, Peptide, 146 aa] &gt;gi|2281119|gb|AAB64050.1| cystatin C [Macaca mulatta] &gt;gi|58613927|gb|AAW79565.1| cystatin C [Macaca mulatta]</Hit_def>
+  <Hit_accession>NP_001028096</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.381</Hsp_bit-score>
+      <Hsp_score>664</Hsp_score>
+      <Hsp_evalue>2.05374e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGASPGKPPRLVGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHEQPHLKRKAFCSFQIYTVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAG+SPGKPPRLVGGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFH+QPHLKRKAFCSFQIY VPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|355784757|gb|EHH65608.1|</Hit_id>
+  <Hit_def>Cystatin-3 [Macaca fascicularis]</Hit_def>
+  <Hit_accession>EHH65608</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.381</Hsp_bit-score>
+      <Hsp_score>664</Hsp_score>
+      <Hsp_evalue>2.05374e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>138</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRATLLLLAILAVALAVSPAAGASPGKPPRLVGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHEQPHLKRKAFCSFQIYTVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRA LLLLAILAVALAVSPAAG+SPGKPPRLVGGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFH+QPHLKRKAFCSFQIY VPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|58081|emb|CAA31253.1|</Hit_id>
+  <Hit_def>ompA - cystatin C fusion preprotein (AA -21 to 120) [synthetic construct]</Hit_def>
+  <Hit_accession>CAA31253</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>259.225</Hsp_bit-score>
+      <Hsp_score>661</Hsp_score>
+      <Hsp_evalue>4.65626e-87</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>LAVALA--VSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>IAVALAGFATVAQASSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>+AVALA   + A  SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|795232752|ref|XP_011807579.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Colobus angolensis palliatus] &gt;gi|795232759|ref|XP_011807580.1| PREDICTED: cystatin-C [Colobus angolensis palliatus] &gt;gi|795232766|ref|XP_011807581.1| PREDICTED: cystatin-C [Colobus angolensis palliatus]</Hit_def>
+  <Hit_accession>XP_011807579</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>259.61</Hsp_bit-score>
+      <Hsp_score>662</Hsp_score>
+      <Hsp_evalue>5.16151e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>138</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MTGPLRAPLLLLAILAVALAVNPAAGASPGKPPRLVGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYTVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>M GPLRAPLLLLAILAVALAV+PAAG+SPGKPPRLVGGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIY VPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|724920018|ref|XP_010381300.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Rhinopithecus roxellana] &gt;gi|724920021|ref|XP_010381301.1| PREDICTED: cystatin-C [Rhinopithecus roxellana]</Hit_def>
+  <Hit_accession>XP_010381300</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>256.529</Hsp_bit-score>
+      <Hsp_score>654</Hsp_score>
+      <Hsp_evalue>6.50702e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGTLRAPLLLLAILAVALAVNPAAGASPGKPPRLVGGPMDVSVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYTVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAG LRAPLLLLAILAVALAV+PAAG+SPGKPPRLVGGPMD SVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIY VPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|403304792|ref|XP_003942971.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Saimiri boliviensis boliviensis]</Hit_def>
+  <Hit_accession>XP_003942971</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>254.218</Hsp_bit-score>
+      <Hsp_score>648</Hsp_score>
+      <Hsp_evalue>5.96728e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRSPLFLLAILAVALALSPAAGASPGRTPRLLGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVEMGRTTCTKNQPNLDNCPFHEQPHLKRKAFCSFQIYSVPWQGIMTLSKSNCQNA</Hsp_hseq>
+      <Hsp_midline>MAGPLR+PL LLAILAVALA+SPAAG+SPG+ PRL+GGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVE+GRTTCTK QPN DNCPFH+QPHLKRKAFCSFQIY+VPWQG MT SKS CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|14278690|pdb|1G96|A</Hit_id>
+  <Hit_def>Chain A, Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|73535285|pdb|1TIJ|A Chain A, 3d Domain-Swapped Human Cystatin C With Amyloid-Like Intermolecular Beta-Sheets &gt;gi|73535286|pdb|1TIJ|B Chain B, 3d Domain-Swapped Human Cystatin C With Amyloid-Like Intermolecular Beta-Sheets &gt;gi|430768441|dbj|BAM73341.1| cystatin-C, partial [synthetic construct]</Hit_def>
+  <Hit_accession>1G96_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>253.062</Hsp_bit-score>
+      <Hsp_score>645</Hsp_score>
+      <Hsp_evalue>8.72676e-85</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|364505964|pdb|3PS8|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of L68v Mutant Of Human Cystatin C &gt;gi|378792101|pdb|3QRD|A Chain A, Crystal Structure Of L68v Mutant Of Human Cystatin C &gt;gi|378792102|pdb|3QRD|B Chain B, Crystal Structure Of L68v Mutant Of Human Cystatin C &gt;gi|378792103|pdb|3QRD|C Chain C, Crystal Structure Of L68v Mutant Of Human Cystatin C &gt;gi|378792104|pdb|3QRD|D Chain D, Crystal Structure Of L68v Mutant Of Human Cystatin C</Hit_def>
+  <Hit_accession>3PS8_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>251.521</Hsp_bit-score>
+      <Hsp_score>641</Hsp_score>
+      <Hsp_evalue>2.67296e-84</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVEVGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVE+GRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|313103877|pdb|3NX0|A</Hit_id>
+  <Hit_def>Chain A, Hinge-Loop Mutation Can Be Used To Control 3d Domain Swapping And Amyloidogenesis Of Human Cystatin C &gt;gi|313103878|pdb|3NX0|B Chain B, Hinge-Loop Mutation Can Be Used To Control 3d Domain Swapping And Amyloidogenesis Of Human Cystatin C</Hit_def>
+  <Hit_accession>3NX0_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>250.366</Hsp_bit-score>
+      <Hsp_score>638</Hsp_score>
+      <Hsp_evalue>9.75843e-84</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQINAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQI AGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|399124842|pdb|3SVA|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of V57d Mutant Of Human Cystatin C</Hit_def>
+  <Hit_accession>3SVA_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>249.98</Hsp_bit-score>
+      <Hsp_score>637</Hsp_score>
+      <Hsp_evalue>1.25602e-83</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIDAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQI AGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|388603918|pdb|3S67|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of V57p Mutant Of Human Cystatin C</Hit_def>
+  <Hit_accession>3S67_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>249.595</Hsp_bit-score>
+      <Hsp_score>636</Hsp_score>
+      <Hsp_evalue>1.59899e-83</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIPAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQI AGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|296200362|ref|XP_002747560.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Callithrix jacchus]</Hit_def>
+  <Hit_accession>XP_002747560</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>249.98</Hsp_bit-score>
+      <Hsp_score>637</Hsp_score>
+      <Hsp_evalue>3.49337e-83</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRDPLLLLAVLALALAVSPAAGTSPGRQPRLLGGPMDASVEEEGVRRALDFAVSEYNKASNDRYHSRALQVVRARKQIVAGVNYFLDVEMGRTTCTKDQPNLDNCPFHEQPHLKRKAFCSFQIYSVPWQGLMTLSKSSCQNA</Hsp_hseq>
+      <Hsp_midline>MAGPLR PLLLLA+LA+ALAVSPAAG+SPG+ PRL+GGPMDASVEEEGVRRALDFAV EYNKASND YHSRALQVVRARKQIVAGVNYF DVE+GRTTCTK QPN DNCPFH+QPHLKRKAFCSFQIY+VPWQG MT SKS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3023631|sp|O19093.1|CYTC_SAISC</Hit_id>
+  <Hit_def>RecName: Full=Cystatin-C; AltName: Full=Cystatin-3; Flags: Precursor &gt;gi|1881826|gb|AAB49516.1| cystatin C [Saimiri sciureus=squirrel monkeys, liver, Peptide, 146 aa] &gt;gi|2281121|gb|AAB64051.1| cystatin C [Saimiri sciureus]</Hit_def>
+  <Hit_accession>O19093</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>249.21</Hsp_bit-score>
+      <Hsp_score>635</Hsp_score>
+      <Hsp_evalue>5.18494e-83</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>132</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALALSPAAGASPGRTPRLLGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVEMGRTTCTKNQPNLDNCPFHEQPHLKRKAFCSFQIYSVPWQGIMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALA+SPAAG+SPG+ PRL+GGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVE+GRTTCTK QPN DNCPFH+QPHLKRKAFCSFQIY+VPWQG MT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|289526592|pdb|3GAX|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of monomeric human cystatin C stabilized against aggregation &gt;gi|289526593|pdb|3GAX|B Chain B, Crystal structure of monomeric human cystatin C stabilized against aggregation</Hit_def>
+  <Hit_accession>3GAX_A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>247.284</Hsp_bit-score>
+      <Hsp_score>630</Hsp_score>
+      <Hsp_evalue>1.31488e-82</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRACQVVRARKQIVAGVNYFLDVELCRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRA QVVRARKQIVAGVNYF DVEL RTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|817334310|ref|XP_012293971.1|</Hit_id>
+  <Hit_def>cystatin-C [Aotus nancymaae] &gt;gi|817334313|ref|XP_012293972.1| cystatin-C [Aotus nancymaae]</Hit_def>
+  <Hit_accession>XP_012293971</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>245.358</Hsp_bit-score>
+      <Hsp_score>625</Hsp_score>
+      <Hsp_evalue>1.79232e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPAAGASPGRQPHLLGGPMDASVEEEGVRRALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVEMGRTTCTKNQPNLENCPFHDQPHLKRKAFCSFQIYSVPWQGIMTLSKSNCQNA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSPAAG+SPG+ P L+GGPMDASVEEEGVRRALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVE+GRTTCTK QPN +NCPFHDQPHLKRKAFCSFQIY+VPWQG MT SKS CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1044383797|ref|XP_017396941.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Cebus capucinus imitator]</Hit_def>
+  <Hit_accession>XP_017396941</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>243.047</Hsp_bit-score>
+      <Hsp_score>619</Hsp_score>
+      <Hsp_evalue>1.44035e-80</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRAPLLLLAILAVALAVSPVAGASPGRSPRLLGGPMDASVEEEGVRSALDFAVSEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVEMGRTTCTKNQPNLDNCPFHDQPNLKRKAFCSFQIYSVPWQGIMTLSKSNCQNA</Hsp_hseq>
+      <Hsp_midline>MAGPLRAPLLLLAILAVALAVSP AG+SPG+ PRL+GGPMDASVEEEGVR ALDFAV EYNKASNDMYHSRALQVVRARKQIVAGVNYF DVE+GRTTCTK QPN DNCPFHDQP+LKRKAFCSFQIY+VPWQG MT SKS CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|55669622|pdb|1R4C|A</Hit_id>
+  <Hit_def>Chain A, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669623|pdb|1R4C|B Chain B, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669624|pdb|1R4C|C Chain C, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669625|pdb|1R4C|D Chain D, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669626|pdb|1R4C|E Chain E, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669627|pdb|1R4C|F Chain F, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669628|pdb|1R4C|G Chain G, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping &gt;gi|55669629|pdb|1R4C|H Chain H, N-Truncated Human Cystatin C; Dimeric Form With 3d Domain Swapping</Hit_def>
+  <Hit_accession>1R4C_A</Hit_accession>
+  <Hit_len>110</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.032</Hsp_bit-score>
+      <Hsp_score>593</Hsp_score>
+      <Hsp_evalue>5.06517e-77</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>110</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>GGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>GGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>GGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|192912|gb|AAA63298.1|</Hit_id>
+  <Hit_def>cystatin C [Mus musculus domesticus]</Hit_def>
+  <Hit_accession>AAA63298</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>4.50361e-69</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASPLRSLLFLLAVLGVAWAATPKQG------PRMLGAPEEADANEEGVRRALDFAVSEYNKGSNDAYHSRAIQVVRARKQLVAGVNYFFDVEMGRTTCTKSQTNLTDCPFHDQPHLMRKALCSFQIYSVPWKGTHSLTKFSCKNA</Hsp_hseq>
+      <Hsp_midline>MA PLR+ L LLA+L VA A +P  G      PR++G P +A   EEGVRRALDFAV EYNK SND YHSRA+QVVRARKQ+VAGVNYFFDVE+GRTTCTK+Q N  +CPFHDQPHL RKA CSFQIY+VPW+GT + +K +C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|1111167241|ref|XP_019317889.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Panthera pardus]</Hit_def>
+  <Hit_accession>XP_019317889</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.305</Hsp_bit-score>
+      <Hsp_score>534</Hsp_score>
+      <Hsp_evalue>1.7326e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAI--LAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGSLRTPLLLLAAVGLTLALAVSPGTGRRNNKSA-LVGAPLDADVNEEGVQQALNFALSEYNKASNDAYHSRAMRVVRARKQVVAGMNYFLDVEIGRTRCTKSQPNLDTCPFHDQPHLMRKTLCSSQIYTVPWMGKTSLVKSGCQDA</Hsp_hseq>
+      <Hsp_midline>MAG LR PLLLLA   L +ALAVSP  G    K   LVG P+DA V EEGV++AL+FA+ EYNKASND YHSRA++VVRARKQ+VAG+NYF DVE+GRT CTK+QPN D CPFHDQPHL RK  CS QIY VPW G  +  KS CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|344279788|ref|XP_003411668.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Loxodonta africana]</Hit_def>
+  <Hit_accession>XP_003411668</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>207.994</Hsp_bit-score>
+      <Hsp_score>528</Hsp_score>
+      <Hsp_evalue>1.20546e-66</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAAPLRAPLFLLAALALAVMLSSAGAASPARPPRLLGGIMDADENEEGVQRALDFAISEYNKASNDKFHSRVVQVVRARKQIVSGVNYFLDVEIGRTTCTKSQPNLANCPFHDQPQLKKKALCSFQIYTVPWLGTTSLTKSSCQDA</Hsp_hseq>
+      <Hsp_midline>MA PLRAPL LLA LA+A+ +S A  +SP +PPRL+GG MDA   EEGV+RALDFA+ EYNKASND +HSR +QVVRARKQIV+GVNYF DVE+GRTTCTK+QPN  NCPFHDQP LK+KA CSFQIY VPW GT + +KS+CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|1214035304|ref|XP_021570310.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: cystatin-C-like [Carlito syrichta]</Hit_def>
+  <Hit_accession>XP_021570310</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>209.534</Hsp_bit-score>
+      <Hsp_score>532</Hsp_score>
+      <Hsp_evalue>4.17706e-66</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>229</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>AVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>TVSPAIGNNPEKPQRRLGGLIDANANEEGVQRALDFAVSEYNKSSNDMYHSRPLQLVHARKQIVAGMNYFLDVELGRTTCTKSQPHLENCPFHEQPHLKRKAFCSFQIYDVPWLGTMSXMKSSCQNA</Hsp_hseq>
+      <Hsp_midline> VSPA G++P KP R +GG +DA+  EEGV+RALDFAV EYNK+SNDMYHSR LQ+V ARKQIVAG+NYF DVELGRTTCTK+QP+ +NCPFH+QPHLKRKAFCSFQIY VPW GTM+  KS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|532098006|ref|XP_005334652.1|</Hit_id>
+  <Hit_def>cystatin-C-like [Ictidomys tridecemlineatus]</Hit_def>
+  <Hit_accession>XP_005334652</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>205.297</Hsp_bit-score>
+      <Hsp_score>521</Hsp_score>
+      <Hsp_evalue>1.56604e-65</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MARSLSVPLLLLGALAVALTVSPATGASPRHSPRLLGGLEEADVNEEGVRRALDFAVSEYNKGSNDAYHSRAMKVVRARKQIVSGVNYLLDVEMGRTTCTKTQAYLADCPFHEEPHLKRKALCSFQIYTVPWLGTISMTKSSCQNA</Hsp_hseq>
+      <Hsp_midline>MA  L  PLLLL  LAVAL VSPA G+SP   PRL+GG  +A V EEGVRRALDFAV EYNK SND YHSRA++VVRARKQIV+GVNY  DVE+GRTTCTKTQ    +CPFH++PHLKRKA CSFQIY VPW GT++ +KS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|984079315|ref|XP_015339072.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Marmota marmota marmota]</Hit_def>
+  <Hit_accession>XP_015339072</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.527</Hsp_bit-score>
+      <Hsp_score>519</Hsp_score>
+      <Hsp_evalue>2.56422e-65</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>120</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MARSLSIPLLLLAALAVALTVSPATGASPRLSPRLLGGLEEADVNEEGVRRAVDFAVSEYNKGSNDAYHSRAMKVVRARKQIVSGVNYFLDVEMGRTTCTKTQAYLADCPFHEEPHLKRKALCSFQIYTVPWLGTISMTKSSCQNA</Hsp_hseq>
+      <Hsp_midline>MA  L  PLLLLA LAVAL VSPA G+SP   PRL+GG  +A V EEGVRRA+DFAV EYNK SND YHSRA++VVRARKQIV+GVNYF DVE+GRTTCTKTQ    +CPFH++PHLKRKA CSFQIY VPW GT++ +KS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|507701119|ref|XP_004715357.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Echinops telfairi]</Hit_def>
+  <Hit_accession>XP_004715357</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.527</Hsp_bit-score>
+      <Hsp_score>519</Hsp_score>
+      <Hsp_evalue>3.37231e-65</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAALLRAPLFVLGALALAGMLSSGGAASPARPPRLLGGLLEADANEEGVQRALDFAVSEYNKASNDKFHHRVVRLKGARKQLVSGVNYFLDVELGRTTCTKSQPNLTTCPFHDQPHLKKRVLCSFQVYTVPWMNSTSLTKSSCQNA</Hsp_hseq>
+      <Hsp_midline>MA  LRAPL +L  LA+A  +S    +SP +PPRL+GG ++A   EEGV+RALDFAV EYNKASND +H R +++  ARKQ+V+GVNYF DVELGRTTCTK+QPN   CPFHDQPHLK++  CSFQ+Y VPW  + + +KS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|594078323|ref|XP_006062856.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Bubalus bubalis]</Hit_def>
+  <Hit_accession>XP_006062856</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>202.601</Hsp_bit-score>
+      <Hsp_score>514</Hsp_score>
+      <Hsp_evalue>2.61156e-64</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLA--ILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQD</Hsp_qseq>
+      <Hsp_hseq>MVGSPRAPLLLLASLIVALALAVSPAAAQGPRKG-RLLGGLMEADVNEEGVQEALSFAVSEFNKRSNDAYQSRVMRVVRARKQVVSGMNYFLDVELGRTTCTKSQANLDSCPFHNQPHLKREKLCSFQVYVVPWMNTINLVKFSCQD</Hsp_hseq>
+      <Hsp_midline>M G  RAPLLLLA  I+A+ALAVSPAA   P K  RL+GG M+A V EEGV+ AL FAV E+NK SND Y SR ++VVRARKQ+V+G+NYF DVELGRTTCTK+Q N D+CPFH+QPHLKR+  CSFQ+Y VPW  T+   K +CQD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|736290|emb|CAA34831.1|</Hit_id>
+  <Hit_def>unnamed protein product, partial [Rattus norvegicus]</Hit_def>
+  <Hit_accession>CAA34831</Hit_accession>
+  <Hit_len>127</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.06</Hsp_bit-score>
+      <Hsp_score>510</Hsp_score>
+      <Hsp_evalue>4.21666e-64</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>LAVAWAGTSRP--PPRLLGAPQEADASEEGVQRALDFAVSEYNKGSNDAYHSRAIQVVRARKQLVAGINYYLDVEMGRTTCTKSQTNLTNCPFHDQPHLMRKALCSFQIYSVPWKGTHTLTKSSCKNA</Hsp_hseq>
+      <Hsp_midline>LAV+ A  S P  PPRL+G P +A   EEGV+RALDFAV EYNK SND YHSRA+QVVRARKQ+VAG+NY+ DVE+GRTTCTK+Q N  NCPFHDQPHL RKA CSFQIY+VPW+GT T +KS+C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|226712|prf||1604194A</Hit_id>
+  <Hit_def>cystatin C</Hit_def>
+  <Hit_accession>1604194A</Hit_accession>
+  <Hit_len>127</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.675</Hsp_bit-score>
+      <Hsp_score>509</Hsp_score>
+      <Hsp_evalue>5.98841e-64</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>LAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>LAVAWAGTSRP--PPRLLGAPQEADASEEGVQRALDFAVSEYNKGSNDAYHSRAIQVVRARKQLVAGINYYLDVEMGRTTCTKSQTNLTNCPFHDQPHLLRKALCSFQIYSVPWKGTHTLTKSSCKNA</Hsp_hseq>
+      <Hsp_midline>LAV+ A  S P  PPRL+G P +A   EEGV+RALDFAV EYNK SND YHSRA+QVVRARKQ+VAG+NY+ DVE+GRTTCTK+Q N  NCPFHDQPHL RKA CSFQIY+VPW+GT T +KS+C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|674044586|ref|XP_008828244.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Nannospalax galili]</Hit_def>
+  <Hit_accession>XP_008828244</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.134</Hsp_bit-score>
+      <Hsp_score>505</Hsp_score>
+      <Hsp_evalue>4.04795e-63</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVAL-AVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASPRRAPLLLLLTVLAMVLAVSSAAGGSPRQGKRKLGGLEEADVNEEGVQRAVDFAVSEYNKASNDAYHSRAIQVLSARKQIVAGINYYVEVELGRTTCTKSQPNLADCPFHDQPHLMRKALCSFQIYSVPWKGTHSLTKSSCKIA</Hsp_hseq>
+      <Hsp_midline>MA P RAPLLLL  +   + AVS AAG SP +  R +GG  +A V EEGV+RA+DFAV EYNKASND YHSRA+QV+ ARKQIVAG+NY+ +VELGRTTCTK+QPN  +CPFHDQPHL RKA CSFQIY+VPW+GT + +KS+C+ A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|54234046|ref|NP_036969.1|</Hit_id>
+  <Hit_def>cystatin-C precursor [Rattus norvegicus] &gt;gi|83301921|sp|P14841.2|CYTC_RAT RecName: Full=Cystatin-C; AltName: Full=Cystatin-3; Flags: Precursor &gt;gi|56541029|gb|AAH87591.1| Cystatin C [Rattus norvegicus] &gt;gi|149041146|gb|EDL95079.1| cystatin C, isoform CRA_b [Rattus norvegicus]</Hit_def>
+  <Hit_accession>NP_036969</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>198.364</Hsp_bit-score>
+      <Hsp_score>503</Hsp_score>
+      <Hsp_evalue>6.08523e-63</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASPLRS----LMLLLAVLAVAWAGTSRP--PPRLLGAPQEADASEEGVQRALDFAVSEYNKGSNDAYHSRAIQVVRARKQLVAGINYYLDVEMGRTTCTKSQTNLTNCPFHDQPHLMRKALCSFQIYSVPWKGTHTLTKSSCKNA</Hsp_hseq>
+      <Hsp_midline>MA PLR+    L +L   LAV+ A  S P  PPRL+G P +A   EEGV+RALDFAV EYNK SND YHSRA+QVVRARKQ+VAG+NY+ DVE+GRTTCTK+Q N  NCPFHDQPHL RKA CSFQIY+VPW+GT T +KS+C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|1099204148|ref|XP_018872892.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-S-like [Gorilla gorilla gorilla] &gt;gi|1099204155|ref|XP_018872894.1| PREDICTED: cystatin-S-like [Gorilla gorilla gorilla]</Hit_def>
+  <Hit_accession>XP_018872892</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.978</Hsp_bit-score>
+      <Hsp_score>502</Hsp_score>
+      <Hsp_evalue>9.53304e-63</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>SSPGKPPRLV-GGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>SSSEEEDRIISGGIYDADLNDEWVQRALHFAISEYNKATEDEYYRRPLQVLRAREQIVAGVNYFLDVELGRTTCTKTQPNLDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTLSKSTCQDA</Hsp_hseq>
+      <Hsp_midline>SS  +  R++ GG  DA + +E V+RAL FA+ EYNKA+ D Y+ R LQV+RAR+QIVAGVNYF DVELGRTTCTKTQPN DNCPFHDQPHLKRKAFCSFQIYAVPWQGTMT SKSTCQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|634891149|ref|XP_007954438.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Orycteropus afer afer]</Hit_def>
+  <Hit_accession>XP_007954438</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.978</Hsp_bit-score>
+      <Hsp_score>502</Hsp_score>
+      <Hsp_evalue>9.83476e-63</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>VSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>LSLASATNSAKPPRLLGGIVDADATEEGVQRAVDFALSEYNKASNDKFHSRVVQVVRARKQIVSGINYFLDVEIGRTTCTKSQPNLATCPFHDQPHLKKKALCSFQIYTVPWLGKTSLMKSSCQNA</Hsp_hseq>
+      <Hsp_midline>+S A+ ++  KPPRL+GG +DA   EEGV+RA+DFA+ EYNKASND +HSR +QVVRARKQIV+G+NYF DVE+GRTTCTK+QPN   CPFHDQPHLK+KA CSFQIY VPW G  +  KS+CQ+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|589943726|ref|XP_006984562.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Peromyscus maniculatus bairdii]</Hit_def>
+  <Hit_accession>XP_006984562</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.208</Hsp_bit-score>
+      <Hsp_score>500</Hsp_score>
+      <Hsp_evalue>1.59603e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASSLRVPLLLLALLAVASATAPKQGR------RLLGGLQEADVHEEGVQRALDFAISEYNKGSNDAYHSRAIQVVRARKQIVAGVNYYLDVEVGRTTCTKSQPNLADCPFHDQPHLMRKALCTFQIYSVPWQGTHSLTKSSCKDA</Hsp_hseq>
+      <Hsp_midline>MA  LR PLLLLA+LAVA A +P  G       RL+GG  +A V EEGV+RALDFA+ EYNK SND YHSRA+QVVRARKQIVAGVNY+ DVE+GRTTCTK+QPN  +CPFHDQPHL RKA C+FQIY+VPWQGT + +KS+C+DA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|1016697965|ref|XP_007535280.2|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Erinaceus europaeus]</Hit_def>
+  <Hit_accession>XP_007535280</Hit_accession>
+  <Hit_len>157</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.208</Hsp_bit-score>
+      <Hsp_score>500</Hsp_score>
+      <Hsp_evalue>2.68357e-62</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>PAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>PASGASPAKSPRLIGGLMDADVNEEGVQRALDFALSEYNKANNDAYHSRAVQVLRARKQVVSGLNYFLDVELGRTTCTKSHPNLADCPFYDQPQLKKRTICSFHIYTVPWMGSISMVRSSCQDA</Hsp_hseq>
+      <Hsp_midline>PA+G+SP K PRL+GG MDA V EEGV+RALDFA+ EYNKA+ND YHSRA+QV+RARKQ+V+G+NYF DVELGRTTCTK+ PN  +CPF+DQP LK++  CSF IY VPW G+++  +S+CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|641701519|ref|XP_008139370.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Eptesicus fuscus]</Hit_def>
+  <Hit_accession>XP_008139370</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.438</Hsp_bit-score>
+      <Hsp_score>498</Hsp_score>
+      <Hsp_evalue>3.95364e-62</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>VSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>VSPAAGANAGRP-RLVGGLAEADVNEEGVQQALNFALSEYNKASNDAYHSRAMRVVRARKQLVAGLNYFLDVEIGRTTCTKSQPNLANCPFHEQPNLKKAALCSFQIYTVPWLGKTSLVKSSCQDA</Hsp_hseq>
+      <Hsp_midline>VSPAAG++ G+P RLVGG  +A V EEGV++AL+FA+ EYNKASND YHSRA++VVRARKQ+VAG+NYF DVE+GRTTCTK+QPN  NCPFH+QP+LK+ A CSFQIY VPW G  +  KS+CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|354475591|ref|XP_003500011.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Cricetulus griseus] &gt;gi|625266634|ref|XP_007624797.1| PREDICTED: cystatin-C [Cricetulus griseus] &gt;gi|537151908|gb|ERE71857.1| cystatin-C-like protein [Cricetulus griseus]</Hit_def>
+  <Hit_accession>XP_003500011</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.052</Hsp_bit-score>
+      <Hsp_score>497</Hsp_score>
+      <Hsp_evalue>4.77408e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASPLRTPLLLLAILAVASAANTKQG------PRLLGGLQEAKVEEEGVKQALDFAISEYNKGSNDAYHSRALEVVRARKQMVAGINYYLDVMVGRTTCTKSQPNLTDCPFHDQPHLMRKTLCSFQIYTVPWQGTQTLTKSSCKSA</Hsp_hseq>
+      <Hsp_midline>MA PLR PLLLLAILAVA A +   G      PRL+GG  +A VEEEGV++ALDFA+ EYNK SND YHSRAL+VVRARKQ+VAG+NY+ DV +GRTTCTK+QPN  +CPFHDQPHL RK  CSFQIY VPWQGT T +KS+C+ A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|676265681|gb|KFO21831.1|</Hit_id>
+  <Hit_def>Cystatin-C [Fukomys damarensis]</Hit_def>
+  <Hit_accession>KFO21831</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.897</Hsp_bit-score>
+      <Hsp_score>494</Hsp_score>
+      <Hsp_evalue>1.32199e-61</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>RAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>RFALLLAATLVTVLSLSLPAES--GKPPRLLGGLEEADASDAGVRRALDFALSEYNKASNDRFHSRARQVLRARKQLVAGVNYFLEVEIGRTTCTKSQPNLTDCPFHEEPHLKRNAVCSFQIYTVPWANKISLTKSSCHDA</Hsp_hseq>
+      <Hsp_midline>R  LLL A L   L++S  A S  GKPPRL+GG  +A   + GVRRALDFA+ EYNKASND +HSRA QV+RARKQ+VAGVNYF +VE+GRTTCTK+QPN  +CPFH++PHLKR A CSFQIY VPW   ++ +KS+C DA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|227013|prf||1613154A</Hit_id>
+  <Hit_def>cystatin C</Hit_def>
+  <Hit_accession>1613154A</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.126</Hsp_bit-score>
+      <Hsp_score>492</Hsp_score>
+      <Hsp_evalue>1.42746e-61</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>PPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>PPRLLGAPQEADASEEGVQRALDFAVSEYNKGSNDAYNSRAIQVVRARKQLVAGINYYLDVEMGRTTCTKSQTNLTNCPFHDQPHLMRKALCSFQIYSVPWKGTHTLTKSSCKNA</Hsp_hseq>
+      <Hsp_midline>PPRL+G P +A   EEGV+RALDFAV EYNK SND Y+SRA+QVVRARKQ+VAG+NY+ DVE+GRTTCTK+Q N  NCPFHDQPHL RKA CSFQIY+VPW+GT T +KS+C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|731274986|ref|XP_010606531.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C isoform X2 [Fukomys damarensis]</Hit_def>
+  <Hit_accession>XP_010606531</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.438</Hsp_bit-score>
+      <Hsp_score>498</Hsp_score>
+      <Hsp_evalue>2.01435e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>IAAMARFALLLAATLVTVLSLSLPAES--GKPPRLLGGLEEADASDAGVRRALDFALSEYNKASNDRFHSRARQVLRARKQLVAGVNYFLEVEIGRTTCTKSQPNLTDCPFHEEPHLKRNAVCSFQIYTVPWANKISLTKSSCHDA</Hsp_hseq>
+      <Hsp_midline>+A   R  LLL A L   L++S  A S  GKPPRL+GG  +A   + GVRRALDFA+ EYNKASND +HSRA QV+RARKQ+VAGVNYF +VE+GRTTCTK+QPN  +CPFH++PHLKR A CSFQIY VPW   ++ +KS+C DA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|31981822|ref|NP_034106.2|</Hit_id>
+  <Hit_def>cystatin-C precursor [Mus musculus] &gt;gi|1345935|sp|P21460.2|CYTC_MOUSE RecName: Full=Cystatin-C; AltName: Full=Cystatin-3; Flags: Precursor &gt;gi|497415|gb|AAB41056.1| cystatin C [Mus musculus] &gt;gi|12805223|gb|AAH02072.1| Cystatin C [Mus musculus] &gt;gi|12832423|dbj|BAB22101.1| unnamed protein product [Mus musculus] &gt;gi|12851128|dbj|BAB28949.1| unnamed protein product [Mus musculus] &gt;gi|12852172|dbj|BAB29303.1| unnamed protein product [Mus musculus] &gt;gi|19548726|gb|AAL90760.1| cystatin C [Mus musculus] &gt;gi|19548728|gb|AAL90761.1| cystatin C [Mus musculus] &gt;gi|74151275|dbj|BAE38771.1| unnamed protein product [Mus musculus] &gt;gi|74183488|dbj|BAE36608.1| unnamed protein product [Mus musculus] &gt;gi|74185381|dbj|BAE30165.1| unnamed protein product [Mus musculus] &gt;gi|74199942|dbj|BAE20785.1| unnamed protein product [Mus musculus] &gt;gi|74226887|dbj|BAE27088.1| unnamed protein product [Mus musculus] &gt;gi|148696603|gb|EDL28550.1| cystatin C, isoform CRA_a [Mus musculus]</Hit_def>
+  <Hit_accession>NP_034106</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.512</Hsp_bit-score>
+      <Hsp_score>493</Hsp_score>
+      <Hsp_evalue>2.26236e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MASPLRSLLFLLAVLAVAWAATPKQG------PRMLGAPEEADANEEGVRRALDFAVSEYNKGSNDAYHSRAIQVVRARKQLVAGVNYFLDVEMGRTTCTKSQTNLTDCPFHDQPHLMRKALCSFQIYSVPWKGTHSLTKFSCKNA</Hsp_hseq>
+      <Hsp_midline>MA PLR+ L LLA+LAVA A +P  G      PR++G P +A   EEGVRRALDFAV EYNK SND YHSRA+QVVRARKQ+VAGVNYF DVE+GRTTCTK+Q N  +CPFHDQPHL RKA CSFQIY+VPW+GT + +K +C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|348581372|ref|XP_003476451.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C-like [Cavia porcellus]</Hit_def>
+  <Hit_accession>XP_003476451</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.741</Hsp_bit-score>
+      <Hsp_score>491</Hsp_score>
+      <Hsp_evalue>3.82605e-61</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>SPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>EPVKRPRLLGGPEEADVREEGVRRALDFALSEYNKASNDRFHSRARQVLRARKQLVAGVNYFLEVEIGRTTCTKSQPNLADCPFHEEPHLKRNSVCSFQIYTVPWEGKISLTKSSCRDA</Hsp_hseq>
+      <Hsp_midline> P K PRL+GGP +A V EEGVRRALDFA+ EYNKASND +HSRA QV+RARKQ+VAGVNYF +VE+GRTTCTK+QPN  +CPFH++PHLKR + CSFQIY VPW+G ++ +KS+C+DA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|671029098|ref|XP_008705330.1|</Hit_id>
+  <Hit_def>PREDICTED: cystatin-C [Ursus maritimus]</Hit_def>
+  <Hit_accession>XP_008705330</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.126</Hsp_bit-score>
+      <Hsp_score>492</Hsp_score>
+      <Hsp_evalue>4.07139e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALAVSPAAGSSPGKPPR-----LVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGPLRTPLL--LLAALALTLALAVAVSPGTSRRNAKSSLVGGALDADVNEEGVQQALNFALSEYNKASNDAYHSRAIRVVRARKQVVAGMNYFLEVEIGRTTCTKSQPNLDSCPFHDQPHLMRKTLCSFQIYTVPWLGKTSLVKSSCQDA</Hsp_hseq>
+      <Hsp_midline>MAGPLR PLL   + A+AL ++ A   SPG   R     LVGG +DA V EEGV++AL+FA+ EYNKASND YHSRA++VVRARKQ+VAG+NYF +VE+GRTTCTK+QPN D+CPFHDQPHL RK  CSFQIY VPW G  +  KS+CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|296923758|ref|NP_001171901.1|</Hit_id>
+  <Hit_def>cystatin-C precursor [Felis catus] &gt;gi|295841409|dbj|BAJ07118.1| cystatin C precursor [Felis catus] &gt;gi|301335170|dbj|BAJ12092.1| cystatin C [Felis catus]</Hit_def>
+  <Hit_accession>NP_001171901</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.741</Hsp_bit-score>
+      <Hsp_score>491</Hsp_score>
+      <Hsp_evalue>6.04479e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>MAGPLRAPLLLLAILAVALA--VSPAAGSSPGKPPRLVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>MAGSLRTPLLLLAAVALTLALAMSPGTGRRNNKSA-LVGAPLDADVNEEGVQQALNFALSEYNKASNDAYHSRAMRVVRARKQVVAGMNYFLDVEIGRTRCTKSQPNLDTCPFHDQPHLMRKTLCSFQIYTVPWMGKTSLVKSSCQDA</Hsp_hseq>
+      <Hsp_midline>MAG LR PLLLLA +A+ LA  +SP  G    K   LVG P+DA V EEGV++AL+FA+ EYNKASND YHSRA++VVRARKQ+VAG+NYF DVE+GRT CTK+QPN D CPFHDQPHL RK  CSFQIY VPW G  +  KS+CQDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|829923792|ref|XP_012594646.1|</Hit_id>
+  <Hit_def>cystatin-C [Microcebus murinus]</Hit_def>
+  <Hit_accession>XP_012594646</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.356</Hsp_bit-score>
+      <Hsp_score>490</Hsp_score>
+      <Hsp_evalue>7.12748e-61</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>LVGGPMDASVEEEGVRRALDFAVGEYNKASNDMYHSRALQVVRARKQIVAGVNYFFDVELGRTTCTKTQPNFDNCPFHDQPHLKRKAFCSFQIYAVPWQGTMTFSKSTCQDA</Hsp_qseq>
+      <Hsp_hseq>LVGGLMDANVNEEDVQRALDFAVSEYNKASNDRYHSRALQVVRARKQVVAGMNYYFDVKMGRTTCTKSQPNLDNCPFHEQPHLKREELCSFQIYSVPWLGKISVVKSSCENA</Hsp_hseq>
+      <Hsp_midline>LVGG MDA+V EE V+RALDFAV EYNKASND YHSRALQVVRARKQ+VAG+NY+FDV++GRTTCTK+QPN DNCPFH+QPHLKR+  CSFQIY+VPW G ++  KS+C++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>138830414</Statistics_db-num>
+      <Statistics_db-len>50871588760</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
+
