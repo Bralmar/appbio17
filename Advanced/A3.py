@@ -10,21 +10,18 @@ import argparse
 from matplotlib.backends.backend_pdf import PdfPages
 
 
-#parser=argparse.ArgumentParser(description='Create a beautiful diagram of your BLAST search')
-#parser.add_argument("a")
-#parser.add_argument('a', nargs='?', default="check_empty")
-#args=parser.parse_args()
 
 
 
-def search():
+def search(args):
 	query=[]
 	Numb=[]
 	score=[]
 	counter=0
-	with open(sys.argv[1], 'rU') as fil:
+	
+	with open(args.filename) as file:
 
-    		indata=NCBIXML.parse(fil)
+    		indata=NCBIXML.parse(file)
 
 		for record in indata:
 		
@@ -40,9 +37,9 @@ def search():
 						Numb.append(counter)
 															
 	return score, Numb, query
-score, acc, query=search()
 
-def histo(score, acc, query):
+
+def histo(score, acc, query, args):
 
 	plt.bar(acc, score)
 	plt.xlabel('Hit number')
@@ -51,8 +48,24 @@ def histo(score, acc, query):
 
 
 	fig = plt.gcf()
-	pp = PdfPages("hej.pdf")
+	pp = PdfPages(args.output)
 	pp.savefig(fig)
 	pp.close()
-histo(score, acc, query)
+	
+	return 
 
+
+def Main():
+	parser = argparse.ArgumentParser() 
+	parser.add_argument("filename", help = "input filename") 
+	parser.add_argument("output", help="output filename")
+	args=parser.parse_args()
+	output = args.output	
+	score, acc, query=search(args)
+	plot= histo(score, acc, query, args)
+
+	
+	return
+
+
+Main()
