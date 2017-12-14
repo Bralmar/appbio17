@@ -10,15 +10,16 @@ import argparse
 from matplotlib.backends.backend_pdf import PdfPages
 
 
-parser=argparse.ArgumentParser(description='Create a beautiful diagram of your BLAST search')
+#parser=argparse.ArgumentParser(description='Create a beautiful diagram of your BLAST search')
 #parser.add_argument("a")
-parser.add_argument('a', nargs='?', default="check_empty")
-args=parser.parse_args()
+#parser.add_argument('a', nargs='?', default="check_empty")
+#args=parser.parse_args()
 
 
 
 def search():
 	query=[]
+	Numb=[]
 	score=[]
 	counter=0
 	with open(sys.argv[1], 'rU') as fil:
@@ -34,25 +35,24 @@ def search():
 					query.append(record.query)
 
 					if record.query==query[0]:
-
+						counter+=1
 						score.append(hsp.score)
-						
-								
-								
-	return score, query
-score, query=search()
+						Numb.append(counter)
+															
+	return score, Numb, query
+score, acc, query=search()
 
-def histo(score):
+def histo(score, acc, query):
 
-	plt.hist(score, normed=True, bins=30)
-	#plt.xlabel('Score')
-	plt.ylabel('Probability')
-	plt.title('Hej')
+	plt.bar(acc, score)
+	plt.xlabel('Hit number')
+	plt.ylabel('Score')
+	plt.title(query[0])
 
 
 	fig = plt.gcf()
 	pp = PdfPages("hej.pdf")
 	pp.savefig(fig)
 	pp.close()
-histo(score)
+histo(score, acc, query)
 
