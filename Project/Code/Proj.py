@@ -10,9 +10,12 @@ from Bio.Seq import Seq
 import pdb
 import os
 import glob
+from subprocess import check_output
 
 path = sys.argv[1]
 #path = 'data/test_folder'
+
+
 
 def ReadFasta(filename):
 	LetterList = []
@@ -97,12 +100,19 @@ def main():
 		shortlist = CompareColumns(Columns)
 		longlist.append(shortlist)
 		finlist=Printright(shortlist, Namelist, counter)
-		with open(str(counter), "w") as sh:
+		with open('bajs', "w") as sh:
 			for n in range(len(Namelist)):
-				sh.write('\n' + '>' + Namelist[n] + '\n' + finlist[n])			
+				sh.write('\n' + '>' + Namelist[n] + '\n' + finlist[n])
+		with open('kiss', 'w') as ph:			
+			out=check_output(["fastprot", 'bajs'])
+			ph.write(out)
+			#print(out)
+		
 
-
-
+		with open(str(counter), 'w') as kd:
+			tree=check_output(["fnj", "kiss"])
+			kd.write(tree)
+			#print(tree)
 
 
 if __name__=='__main__':
