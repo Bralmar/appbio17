@@ -4,6 +4,13 @@
 #at least 50% of amino acids are unique, OK
 #no amino acid appears more than twice.
 
+
+# To DO:
+# -Make Histogram
+# -Use tempfiles
+# -Make comments
+# -Make it easier to run (argparse?) 
+
 import sys
 from Bio import SeqIO
 from Bio.Seq import Seq
@@ -11,6 +18,8 @@ import pdb
 import os
 import glob
 from subprocess import check_output
+import dendropy
+from dendropy.calculate import treecompare
 
 path = sys.argv[1]
 #path = 'data/test_folder'
@@ -68,26 +77,52 @@ def CompareColumns(Columns):
 			for key in count:
 				if count[key] > 2:
 					ShortList.append(Columns[m])
+					break #Stopps looking in column if more than 2 characters are found
 			count = {}
 
 	return ShortList
 
 
-def Printright(shortlist, Namelist, counter):
+def Printright(shortlist, Namelist, Columns):
 	seqlist=[]
 	donelist=[]
 	finlist=[]
+	Non_CleanList =[]
+	Non_CleanList_Done =[]
 	for m in range(len(Namelist)):		
 		for i in range(len(shortlist)):
-			seqlist.append(shortlist[i][m])
+			seqlist.append(shortlist[i][m]) #Clean List
+			Non_CleanList.append(Columns[i][m])	#Non Clean list
 		donelist.append("".join(seqlist))
+		Non_CleanList_Done.append("".join(Non_CleanList))
+		Non_CleanList = []
 		seqlist=[]
 		finlist.append(donelist[m].replace(" ", ""))
+		
+	return finlist, Non_CleanList_Done
 
-#	for n in range(len(Namelist)):
-#		sys.stdout.write('\n' + '>' + Namelist[n] + '\n' + finlist[n])
 
-	return finlist
+
+def tred(counter, Namelist, finlist, Non_CleanList_Done):
+	with open('bajs', "w") as sh: # B.A.J.S= Beskrivning Av Justerad Sekvens 
+		for n in range(len(Namelist)):
+			sh.write('\n' + '>' + Namelist[n] + '\n' + Non_CleanList_Done[n])
+	with open('kiss', 'w') as ph: # K.I.S.S = Kalkylerar Individuell Sekvensiell Sträcka av BAJS 			
+		out=check_output(["fastprot", 'bajs'])
+		ph.write(out)
+
+	with open(str(counter), 'w') as kd:
+		tree=check_output(["fnj", "-O", "newick", "kiss"])
+		kd.write(tree)
+	
+	tns = dendropy.TaxonNamespace()
+	t1 = dendropy.Tree.get(file=open('asymmetric_0.5.tree', 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
+	t2 = dendropy.Tree.get(file=open(str(counter), 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
+	t1.encode_bipartitions()
+	t2.encode_bipartitions()
+	print(treecompare.symmetric_difference(t1, t2))
+
+	return
 
 
 
@@ -96,24 +131,18 @@ def main():
 	counter=0
 	for filename in glob.glob(os.path.join(path, '*.msl')):
 		counter+=1
+		#Remove stuff
 		Columns, Namelist = ReadFasta(filename)
 		shortlist = CompareColumns(Columns)
 		longlist.append(shortlist)
-		finlist=Printright(shortlist, Namelist, counter)
-		with open('bajs', "w") as sh:
-			for n in range(len(Namelist)):
-				sh.write('\n' + '>' + Namelist[n] + '\n' + finlist[n])
-		with open('kiss', 'w') as ph:			
-			out=check_output(["fastprot", 'bajs'])
-			ph.write(out)
-			#print(out)
-		
+		finlist, Non_CleanList_Done =Printright(shortlist, Namelist, Columns)
+		tred(counter, Namelist, finlist, Non_CleanList_Done)
 
-		with open(str(counter), 'w') as kd:
-			tree=check_output(["fnj", "kiss"])
-			kd.write(tree)
-			#print(tree)
+
+		
 
 
 if __name__=='__main__':
 	main()
+
+
