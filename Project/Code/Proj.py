@@ -8,16 +8,20 @@ import sys
 from Bio import SeqIO
 from Bio.Seq import Seq
 import pdb
+import os
+import glob
 
+path = 'data/asymmetric_0.5'
+#path = 'data/test_folder'
 
-def ReadFasta():
+def ReadFasta(filename):
 	LetterList = []
 	CompList = []
 	VarList=[]
 	Columns=[]
 
 	#Opens file and extracts each sequence as a list in a list
-	with open(sys.argv[1],'rU') as ih:
+	with open(filename,'rU') as ih:
 		for record in list(SeqIO.parse(ih, "fasta")):
 			for i in range(0, len(record.seq)):
 				LetterList.append(record.seq[i])
@@ -34,7 +38,7 @@ def ReadFasta():
 				
 	return Columns
 
-Columns = ReadFasta()
+
 
 def CompareColumns(Columns):
 	RemList = []
@@ -49,7 +53,25 @@ def CompareColumns(Columns):
 			ShortList.append(Columns[m].replace(Columns[m],len(Columns[m])*' '))
 		else:			
 			ShortList.append(Columns[m])
-	#print(len(ShortList))
-	print(ShortList)
 
-CompareColumns(Columns)
+	return ShortList
+
+
+
+def main():
+	longlist = []
+	for filename in glob.glob(os.path.join(path, '*.msl')):
+		Columns = ReadFasta(filename)
+		shortlist = CompareColumns(Columns)
+		longlist.append(shortlist)
+	sys.stdout.write(str(longlist))
+
+
+
+
+if __name__=='__main__':
+	main()
+
+
+
+
