@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-#proj.py fast med kommentarer. Ändrade på kiss & bajs och ville inte ta bort den gamla om det inte går att köra i skolan. 
+
 
 
 # To DO:
@@ -107,7 +107,7 @@ def tred(counter, Namelist, finlist, Non_CleanList_Done):
 	with open('fa_sekvens', "w") as sh:  					#Creates a file with each alignment as a Fasta-format, B.A.J.S= Beskrivning Av Justerad Sekvens
 		for n in range(len(Namelist)):	
 			sh.write('\n' + '>' + Namelist[n] + '\n' + Non_CleanList_Done[n])
-	with open('fastprot_text', 'w') as ph: 					# Runs the command "fastprot" on file "fa_sekvens". K.I.S.S = Kalkylerar Individuell Sekvensiell Sträcka av BAJS 			
+	with open('fastprot_text', 'w') as ph: 					# Runs the command "fastprot" on file "fa_sekvens". K.I.S.S = Kalkylerar Individuell Sekvensiell Strcka av BAJS 			
 		out=check_output(["fastprot", 'fa_sekvens'])
 		ph.write(out)
 
