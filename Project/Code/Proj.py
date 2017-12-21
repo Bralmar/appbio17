@@ -18,10 +18,13 @@ from subprocess import check_output
 import dendropy
 from dendropy.calculate import treecompare
 import tempfile
+import numpy as np
 
-#traed_ref = os.path.join(sys.argv[1], sys.argv[2])
 
-#path = 'data/test_folder'
+#For plotting stuff
+import seaborn as sns 
+sns.set(color_codes=True)
+import matplotlib.pyplot as plt
 
 
 
@@ -104,29 +107,63 @@ def Printright(shortlist, Namelist, Columns):
 
 
 
-def tred(counter, Namelist, finlist, Non_CleanList_Done):		
-	'''Returns the symmetric difference between each noise and original alignment and the original tree.'''
-	with open('fa_sekvens', "w") as sh:  					#Creates a file with each alignment as a Fasta-format, B.A.J.S= Beskrivning Av Justerad Sekvens
-		for n in range(len(Namelist)):	
-			sh.write('\n' + '>' + Namelist[n] + '\n' + Non_CleanList_Done[n])
-	with open('fastprot_text', 'w') as ph: 					# Runs the command "fastprot" on file "fa_sekvens". K.I.S.S = Kalkylerar Individuell Sekvensiell Strcka av BAJS 			
-		out=check_output(["fastprot", 'fa_sekvens'])
-		ph.write(out)
+def tred(counter, Namelist, finlist, Non_CleanList_Done):
 
-	temp=tempfile.TemporaryFile(mode='w+t')			# Creates a temporary file "temp" and makes it readable as text. Writes output of fnj to it.
-	temp.write(check_output(["fnj", "-O", "newick", "fastprot_text"]))
-	temp.seek(0)
+	original=[]
+	noise=[]
+		
+	'''Returns the symmetric difference between each noise and original alignment and the original tree.'''
+
+	with open('fasta_orig', "w") as fo:  						#Creates a file with each alignment as a Fasta-format
+		for n in range(len(Namelist)):	
+			fo.write('\n' + '>' + Namelist[n] + '\n' + Non_CleanList_Done[n])
+
+	with open('fasta_noise', 'w') as fn:
+		for n in range(len(Namelist)):
+			fn.write('\n' + '>' + Namelist[n] + '\n' + finlist[n])
+
+	with open('fastprot_orig', 'w') as fpo: 					# Runs the command "fastprot" on file "fa_sekvens".  			
+		fpo.write(check_output(["fastprot", 'fasta_orig']))
+		
+	with open('fastprot_noise', 'w') as fpn:
+		fpn.write(check_output(["fastprot", 'fasta_noise']))	
+
+	tempo=tempfile.TemporaryFile(mode='w+t')						# Creates a temporary file "temp" and makes it readable as text. Writes output of fnj to it.
+	tempo.write(check_output(["fnj", "-O", "newick", "fastprot_orig"]))
+	tempo.seek(0)
 	
+	tempn=tempfile.TemporaryFile(mode='w+t')						# Creates a temporary file "temp" and makes it readable as text. Writes output of fnj to it.
+	tempn.write(check_output(["fnj", "-O", "newick", "fastprot_noise"]))
+	tempn.seek(0)
+
+
 	tns = dendropy.TaxonNamespace()
-	t1 = dendropy.Tree.get(file=open('asymmetric_0.5.tree', 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
-	t2 = dendropy.Tree.get(file=temp, schema="newick", tree_offset=0, taxon_namespace=tns)
+	t1 = dendropy.Tree.get(file=open(sys.argv[2], 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
+	t2 = dendropy.Tree.get(file=tempo, schema="newick", tree_offset=0, taxon_namespace=tns)
+	t3 = dendropy.Tree.get(file=tempn, schema="newick", tree_offset=0, taxon_namespace=tns)
 	t1.encode_bipartitions()
 	t2.encode_bipartitions()
-	print(treecompare.symmetric_difference(t1, t2))				#Compares the symmetric difference between the two trees t1 and t2 
+	t3.encode_bipartitions()
+	original=treecompare.symmetric_difference(t1, t2)				#Compares the symmetric difference between the two trees t1 and t2 
+	noise=treecompare.symmetric_difference(t1, t3)
+	tempo.close()
+	tempn.close()
+	
 
-	return
+	return original, noise
 
 
+
+
+def PlotHist(symdiff_original, symdiff_noise):
+
+	plt.hist([symdiff_original, symdiff_noise], color=['r', 'b'], alpha=1, bins=25, label=["Original", "Noise Reduced"])
+	plt.legend()
+	plt.title(sys.argv[1])
+	plt.xlabel('Symmetric Difference')
+	plt.ylabel('Frequency')	
+	plt.show()
+	
 		
 
 
@@ -134,6 +171,8 @@ def main():
 	'''Main function that calls all the other functions'''
 	longlist = []
 	counter=0
+	symdiff_original=[]
+	symdiff_noise=[]
 	for filename in glob.glob(os.path.join(sys.argv[1], '*.msl')): 		#Opens one file at a time with the .msl format in a selected folder typed as sys.argv[1]. 
 		counter+=1
 		#Remove stuff
@@ -141,12 +180,24 @@ def main():
 		shortlist = CompareColumns(Columns)
 		longlist.append(shortlist)
 		finlist, Non_CleanList_Done =Printright(shortlist, Namelist, Columns)
-		tred(counter, Namelist, finlist, Non_CleanList_Done)
+		original, noise = tred(counter, Namelist, finlist, Non_CleanList_Done)
+		symdiff_original.append(original)
+		symdiff_noise.append(noise)
+		print(counter)
 
+	with open('Stats_original.txt', "w") as ih: 
+		ih.write("Mean = " + str(np.mean(symdiff_original)) + '\n' + "Median = " +  str(np.median(symdiff_original)) + '\n' + str(symdiff_original))
+		
+	with open('Stats_noise.txt', "w") as ih:
+		ih.write("Mean = " + str(np.mean(symdiff_noise)) + '\n' + "Median = " +  str(np.median(symdiff_noise)) + '\n' + str(symdiff_noise)) #Creates a file with each alignment as a Fasta-format
+		
+		
+	PlotHist(symdiff_original, symdiff_noise)
+
+	
 
 		
 
 
 if __name__=='__main__':
 	main()
-
