@@ -20,9 +20,10 @@ import glob
 from subprocess import check_output
 import dendropy
 from dendropy.calculate import treecompare
+import tempfile
 
-path = sys.argv[1]
-#path = 'data/test_folder'
+
+
 
 
 
@@ -104,24 +105,25 @@ def Printright(shortlist, Namelist, Columns):
 
 
 def tred(counter, Namelist, finlist, Non_CleanList_Done):
-	with open('bajs', "w") as sh: # B.A.J.S= Beskrivning Av Justerad Sekvens 
+	with open('bajs', "w") as sh:
 		for n in range(len(Namelist)):
 			sh.write('\n' + '>' + Namelist[n] + '\n' + Non_CleanList_Done[n])
-	with open('kiss', 'w') as ph: # K.I.S.S = Kalkylerar Individuell Sekvensiell Sträcka av BAJS 			
+	with open('kiss', 'w') as ph: 			
 		out=check_output(["fastprot", 'bajs'])
 		ph.write(out)
 
-	with open(str(counter), 'w') as kd:
-		tree=check_output(["fnj", "-O", "newick", "kiss"])
-		kd.write(tree)
+	
+	temp=tempfile.TemporaryFile(mode='w+t')			# Creates a temporary file "temp" and makes it readable as text. Writes output of fnj to it.
+	temp.write(check_output(["fnj", "-O", "newick", "kiss"]))
+	temp.seek(0)
 	
 	tns = dendropy.TaxonNamespace()
 	t1 = dendropy.Tree.get(file=open('asymmetric_0.5.tree', 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
-	t2 = dendropy.Tree.get(file=open(str(counter), 'r'), schema="newick", tree_offset=0, taxon_namespace=tns)
+	t2 = dendropy.Tree.get(file=temp, schema="newick", tree_offset=0, taxon_namespace=tns)
 	t1.encode_bipartitions()
 	t2.encode_bipartitions()
 	print(treecompare.symmetric_difference(t1, t2))
-
+	temp.close()
 	return
 
 
@@ -129,7 +131,7 @@ def tred(counter, Namelist, finlist, Non_CleanList_Done):
 def main():
 	longlist = []
 	counter=0
-	for filename in glob.glob(os.path.join(path, '*.msl')):
+	for filename in glob.glob(os.path.join(sys.argv[1], '*.msl')):
 		counter+=1
 		#Remove stuff
 		Columns, Namelist = ReadFasta(filename)
